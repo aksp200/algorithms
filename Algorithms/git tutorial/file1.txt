@@ -247,3 +247,6 @@ git config --global core.excludesfile ~/.gitignore_global
 
 how to keep tracking already committed file?
 git rm --cached <filename>
+
+
+git ignores empty directories. It is made for tracking files.
