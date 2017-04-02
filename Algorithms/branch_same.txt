@@ -4,3 +4,5 @@ This branch is created with git chechout -b <branch_name>
 this text may cause conflict.
 
 test text for merge.
+
+in master : a line added to check stash.
