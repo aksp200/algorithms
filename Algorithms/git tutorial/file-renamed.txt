@@ -15,3 +15,10 @@ how to amend commit in repo?
 This can be used on ammending data or commen of last commit. You can change only latest commit.
 The command is :
 git commit --amend -m " git commit amed example "
+
+
+To undo changes, rather than amending, make new commits that undo changes.
+
+
+
+this is a garbage data
