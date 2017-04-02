@@ -5468,3 +5468,148 @@ $ cat .git/config
 
 aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
 $
+
+
+git remote
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git add Algorithms/git\ tutorial/file1.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   Algorithms/git tutorial/file1.txt
+
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git commit -m "added info abt git remote"
+[master 309728f] added info abt git remote
+ Committer: Akshay Palshikar <Akshay Palshikar>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 29 insertions(+)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git push -u origin master
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 798 bytes | 0 bytes/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/akshaypalshikar/algorithms.git
+   21b4c61..309728f  master -> master
+Branch master set up to track remote branch master from origin.
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git branch -r
+  origin/HEAD -> origin/master
+  origin/create_branch_and_switch_same_time
+  origin/first_branch
+  origin/master
+  origin/new_feature
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ pwd
+/c/Users/aksma/git/algorithms
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ cat .git/config
+[core]
+        repositoryformatversion = 0
+        filemode = false
+        bare = false
+        logallrefupdates = true
+        symlinks = false
+        ignorecase = true
+[remote "origin"]
+        url = https://github.com/akshaypalshikar/algorithms.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+        remote = origin
+        merge = refs/heads/master
+[branch "first_branch"]
+        remote = origin
+        merge = refs/heads/new_feature
+[branch "create_branch_and_switch_same_time"]
+        remote = origin
+        merge = refs/heads/create_branch_and_switch_same_time
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ ls -la
+.git/       .gitignore  Algorithms/
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ ls -la
+.git/       .gitignore  Algorithms/
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ ls -la
+.git/       .gitignore  Algorithms/
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ ls -la .git/
+COMMIT_EDITMSG  ORIG_HEAD       description     index           logs/           packed-refs
+HEAD            config          hooks/          info/           objects/        refs/
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ ls -la .git/
+COMMIT_EDITMSG  ORIG_HEAD       description     index           logs/           packed-refs
+HEAD            config          hooks/          info/           objects/        refs/
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ ls -la .git/refs/
+heads/   remotes/ tags/
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ ls -la .git/refs/remotes/origin/
+HEAD                                master
+create_branch_and_switch_same_time  new_feature
+first_branch
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ ls -la .git/refs/remotes/origin/
+total 9
+drwxr-xr-x 1 aksma 197610  0 Apr  2 03:15 .
+drwxr-xr-x 1 aksma 197610  0 Apr  1 18:09 ..
+-rw-r--r-- 1 aksma 197610 32 Apr  1 18:09 HEAD
+-rw-r--r-- 1 aksma 197610 41 Apr  2 02:30 create_branch_and_switch_same_time
+-rw-r--r-- 1 aksma 197610 41 Apr  2 01:12 first_branch
+-rw-r--r-- 1 aksma 197610 41 Apr  2 03:15 master
+-rw-r--r-- 1 aksma 197610 41 Apr  2 00:47 new_feature
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git branch -r
+  origin/HEAD -> origin/master
+  origin/create_branch_and_switch_same_time
+  origin/first_branch
+  origin/master
+  origin/new_feature
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git branch -a
+  create_branch_and_switch_same_time
+  first_branch
+* master
+  merged
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/create_branch_and_switch_same_time
+  remotes/origin/first_branch
+  remotes/origin/master
+  remotes/origin/new_feature
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$
