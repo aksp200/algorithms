@@ -10,3 +10,8 @@ double dash is used to avoid confusion between branch and file to be overwritten
 
 how to undo the changes in staging area?
 git reset HEAD unwanted\ file.txt
+
+how to amend commit in repo?
+This can be used on ammending data or commen of last commit. You can change only latest commit.
+The command is :
+git commit --amend -m " git commit amed example "
