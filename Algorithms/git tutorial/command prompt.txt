@@ -8188,3 +8188,360 @@ index 7b80efe..80d2799 100644
 
 aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
 $
+
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git checkout new_feature
+M       Algorithms/git tutorial/command prompt.txt
+M       Algorithms/git tutorial/file1.txt
+Switched to branch 'new_feature'
+Your branch is up-to-date with 'origin/new_feature'.
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (new_feature)
+$ git log --oneline
+cbfe9b3 adding a file in branch
+fa1ed01 git logs
+01ca377 ls-tree tree-ish traverse tree
+27c193d .gitkeep convention
+cee6dbf git ignores empty directories
+b09bdeb untrack already committed files
+350f45f what kind of files should be ignored
+ac6cf3c info about .gitignore added
+753ad25 adding git revert
+7623c0e adding .gitignore at project level
+588a57e garbage 2
+270d3d6 garbage 1
+cfb3d08 removed garbage
+9c0eef1 adding more garbage
+3d057e1 renamed the file
+ff3dd44 added git commands that are run till now
+2c23970 Revert "adding garbage text to revert"
+4d98aee adding garbage text to revert
+f49918a before starting git revert
+0ae0e0f committing file from old version again
+ca9b9fb how to checkout spefici version from repo
+b99df6e adding garbage to rollback
+95fbb16 adding all the commands used in the commit
+bdadebe git commit amed example
+f86107f how to undo the changes in staging area?
+a5318c6 added about how to undo changes in working directory
+da11818 file rename example
+7a7982a added git tutorial file
+b8924be Fibonacci series
+b2a3eb4 Initial Commit
+787bc81 Initial Commit
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (new_feature)
+$ git checkout
+HEAD                 master               origin/HEAD          origin/new_feature
+ORIG_HEAD            new_feature          origin/master
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (new_feature)
+$ git checkout
+HEAD                 master               origin/HEAD          origin/new_feature
+ORIG_HEAD            new_feature          origin/master
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (new_feature)
+$ git checkout new_feature
+M       Algorithms/git tutorial/command prompt.txt
+M       Algorithms/git tutorial/file1.txt
+Already on 'new_feature'
+Your branch is up-to-date with 'origin/new_feature'.
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (new_feature)
+$
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (new_feature)
+$ clear
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (new_feature)
+$ git log --oneline
+cbfe9b3 adding a file in branch
+fa1ed01 git logs
+01ca377 ls-tree tree-ish traverse tree
+27c193d .gitkeep convention
+cee6dbf git ignores empty directories
+b09bdeb untrack already committed files
+350f45f what kind of files should be ignored
+ac6cf3c info about .gitignore added
+753ad25 adding git revert
+7623c0e adding .gitignore at project level
+588a57e garbage 2
+270d3d6 garbage 1
+cfb3d08 removed garbage
+9c0eef1 adding more garbage
+3d057e1 renamed the file
+ff3dd44 added git commands that are run till now
+2c23970 Revert "adding garbage text to revert"
+4d98aee adding garbage text to revert
+f49918a before starting git revert
+0ae0e0f committing file from old version again
+ca9b9fb how to checkout spefici version from repo
+b99df6e adding garbage to rollback
+95fbb16 adding all the commands used in the commit
+bdadebe git commit amed example
+f86107f how to undo the changes in staging area?
+a5318c6 added about how to undo changes in working directory
+da11818 file rename example
+7a7982a added git tutorial file
+b8924be Fibonacci series
+b2a3eb4 Initial Commit
+787bc81 Initial Commit
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (new_feature)
+$ git checkout -b create_branch_and_switch_same_time
+M       Algorithms/git tutorial/command prompt.txt
+M       Algorithms/git tutorial/file1.txt
+Switched to a new branch 'create_branch_and_switch_same_time'
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (create_branch_and_switch_same_time)
+$ git branch
+* create_branch_and_switch_same_time
+  master
+  new_feature
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (create_branch_and_switch_same_time)
+$ vi branch_same.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (create_branch_and_switch_same_time)
+$ git add branch_same.txt
+warning: LF will be replaced by CRLF in Algorithms/branch_same.txt.
+The file will have its original line endings in your working directory.
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (create_branch_and_switch_same_time)
+$ git commit -m "this is a commit in create_branch_and_switch_same_time"
+[create_branch_and_switch_same_time 4d03ac8] this is a commit in create_branch_and_switch_same_time
+ Committer: Akshay Palshikar <Akshay Palshikar>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+)
+ create mode 100644 Algorithms/branch_same.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (create_branch_and_switch_same_time)
+$ git status
+On branch create_branch_and_switch_same_time
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   git tutorial/command prompt.txt
+        modified:   git tutorial/file1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (create_branch_and_switch_same_time)
+$ git commit -m "in create short branch "
+On branch create_branch_and_switch_same_time
+Changes not staged for commit:
+        modified:   git tutorial/command prompt.txt
+        modified:   git tutorial/file1.txt
+
+no changes added to commit
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (create_branch_and_switch_same_time)
+$ git add *.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (create_branch_and_switch_same_time)
+$ git commit -m "in create short branch "
+On branch create_branch_and_switch_same_time
+Changes not staged for commit:
+        modified:   git tutorial/command prompt.txt
+        modified:   git tutorial/file1.txt
+
+no changes added to commit
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (create_branch_and_switch_same_time)
+$ git add *.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (create_branch_and_switch_same_time)
+$ git status
+On branch create_branch_and_switch_same_time
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   git tutorial/command prompt.txt
+        modified:   git tutorial/file1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (create_branch_and_switch_same_time)
+$ git add git\ tutorial/command\ prompt.txt  git\ tutorial/file1.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (create_branch_and_switch_same_time)
+$ git commit -m "in create short branch "
+[create_branch_and_switch_same_time 7ef6baa] in create short branch
+ Committer: Akshay Palshikar <Akshay Palshikar>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 682 insertions(+)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (create_branch_and_switch_same_time)
+$ git log --oneline
+7ef6baa in create short branch
+4d03ac8 this is a commit in create_branch_and_switch_same_time
+cbfe9b3 adding a file in branch
+fa1ed01 git logs
+01ca377 ls-tree tree-ish traverse tree
+27c193d .gitkeep convention
+cee6dbf git ignores empty directories
+b09bdeb untrack already committed files
+350f45f what kind of files should be ignored
+ac6cf3c info about .gitignore added
+753ad25 adding git revert
+7623c0e adding .gitignore at project level
+588a57e garbage 2
+270d3d6 garbage 1
+cfb3d08 removed garbage
+9c0eef1 adding more garbage
+3d057e1 renamed the file
+ff3dd44 added git commands that are run till now
+2c23970 Revert "adding garbage text to revert"
+4d98aee adding garbage text to revert
+f49918a before starting git revert
+0ae0e0f committing file from old version again
+ca9b9fb how to checkout spefici version from repo
+b99df6e adding garbage to rollback
+95fbb16 adding all the commands used in the commit
+bdadebe git commit amed example
+f86107f how to undo the changes in staging area?
+a5318c6 added about how to undo changes in working directory
+da11818 file rename example
+7a7982a added git tutorial file
+b8924be Fibonacci series
+b2a3eb4 Initial Commit
+787bc81 Initial Commit
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (create_branch_and_switch_same_time)
+$ git checkout new_feature
+Switched to branch 'new_feature'
+Your branch is up-to-date with 'origin/new_feature'.
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (new_feature)
+$ git log --oneline
+cbfe9b3 adding a file in branch
+fa1ed01 git logs
+01ca377 ls-tree tree-ish traverse tree
+27c193d .gitkeep convention
+cee6dbf git ignores empty directories
+b09bdeb untrack already committed files
+350f45f what kind of files should be ignored
+ac6cf3c info about .gitignore added
+753ad25 adding git revert
+7623c0e adding .gitignore at project level
+588a57e garbage 2
+270d3d6 garbage 1
+cfb3d08 removed garbage
+9c0eef1 adding more garbage
+3d057e1 renamed the file
+ff3dd44 added git commands that are run till now
+2c23970 Revert "adding garbage text to revert"
+4d98aee adding garbage text to revert
+f49918a before starting git revert
+0ae0e0f committing file from old version again
+ca9b9fb how to checkout spefici version from repo
+b99df6e adding garbage to rollback
+95fbb16 adding all the commands used in the commit
+bdadebe git commit amed example
+f86107f how to undo the changes in staging area?
+a5318c6 added about how to undo changes in working directory
+da11818 file rename example
+7a7982a added git tutorial file
+b8924be Fibonacci series
+b2a3eb4 Initial Commit
+787bc81 Initial Commit
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (new_feature)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git log --oneline
+fa1ed01 git logs
+01ca377 ls-tree tree-ish traverse tree
+27c193d .gitkeep convention
+cee6dbf git ignores empty directories
+b09bdeb untrack already committed files
+350f45f what kind of files should be ignored
+ac6cf3c info about .gitignore added
+753ad25 adding git revert
+7623c0e adding .gitignore at project level
+588a57e garbage 2
+270d3d6 garbage 1
+cfb3d08 removed garbage
+9c0eef1 adding more garbage
+3d057e1 renamed the file
+ff3dd44 added git commands that are run till now
+2c23970 Revert "adding garbage text to revert"
+4d98aee adding garbage text to revert
+f49918a before starting git revert
+0ae0e0f committing file from old version again
+ca9b9fb how to checkout spefici version from repo
+b99df6e adding garbage to rollback
+95fbb16 adding all the commands used in the commit
+bdadebe git commit amed example
+f86107f how to undo the changes in staging area?
+a5318c6 added about how to undo changes in working directory
+da11818 file rename example
+7a7982a added git tutorial file
+b8924be Fibonacci series
+b2a3eb4 Initial Commit
+787bc81 Initial Commit
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git log --graph --oneline --decorate --all
+* 7ef6baa (create_branch_and_switch_same_time) in create short branch
+* 4d03ac8 this is a commit in create_branch_and_switch_same_time
+* cbfe9b3 (origin/new_feature, new_feature) adding a file in branch
+* fa1ed01 (HEAD -> master, origin/master, origin/HEAD) git logs
+* 01ca377 ls-tree tree-ish traverse tree
+* 27c193d .gitkeep convention
+* cee6dbf git ignores empty directories
+* b09bdeb untrack already committed files
+* 350f45f what kind of files should be ignored
+* ac6cf3c info about .gitignore added
+* 753ad25 adding git revert
+* 7623c0e adding .gitignore at project level
+* 588a57e garbage 2
+* 270d3d6 garbage 1
+* cfb3d08 removed garbage
+* 9c0eef1 adding more garbage
+* 3d057e1 renamed the file
+* ff3dd44 added git commands that are run till now
+* 2c23970 Revert "adding garbage text to revert"
+* 4d98aee adding garbage text to revert
+* f49918a before starting git revert
+* 0ae0e0f committing file from old version again
+* ca9b9fb how to checkout spefici version from repo
+* b99df6e adding garbage to rollback
+* 95fbb16 adding all the commands used in the commit
+* bdadebe git commit amed example
+* f86107f how to undo the changes in staging area?
+* a5318c6 added about how to undo changes in working directory
+* da11818 file rename example
+* 7a7982a added git tutorial file
+* b8924be Fibonacci series
+* b2a3eb4 Initial Commit
+* 787bc81 Initial Commit
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$
