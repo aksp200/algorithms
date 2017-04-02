@@ -84,7 +84,138 @@ After doing this, you may fix the identity used for this commit with:
  1 file changed, 2 deletions(-)
 
 Using rest to undo many commits
-git reset
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git reset --soft cfb3d08d868df226e193d57bf26b24023fb3a04d
 
-g1
-g2
+$ git log -n 3
+commit cfb3d08d868df226e193d57bf26b24023fb3a04d
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:36:31 2017 -0700
+
+    removed garbage
+
+commit 9c0eef14148051a1ec7119f7fe300bb0b486fc7c
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:35:02 2017 -0700
+
+    adding more garbage
+
+commit 3d057e15a2f89effbd4ba367589cac4a9d3f0add
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:30:08 2017 -0700
+
+    renamed the file
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 11 commits.
+  (use "git push" to publish your local commits)
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   file1.txt
+
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git diff --staged
+diff --git a/Algorithms/git tutorial/file1.txt b/Algorithms/git tutorial/file1.txt
+index a28fda6..9e9cc9d 100644
+--- a/Algorithms/git tutorial/file1.txt
++++ b/Algorithms/git tutorial/file1.txt
+@@ -85,3 +85,6 @@ After doing this, you may fix the identity used for this commit with:
+
+ Using rest to undo many commits
+ git reset
++
++g1
++g2
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git reset --soft 588a57e1ccd92cdede363b3bdce42c7ab81dff88
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 13 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git log -n 3
+commit 588a57e1ccd92cdede363b3bdce42c7ab81dff88
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:37:30 2017 -0700
+
+    garbage 2
+
+commit 270d3d6c0a910e480c5ebec94036d9670b21acba
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:36:53 2017 -0700
+
+    garbage 1
+
+commit cfb3d08d868df226e193d57bf26b24023fb3a04d
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:36:31 2017 -0700
+
+    removed garbage
+
+
+One more option is git reset mixed mode.
+
+    aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+    $ git reset --mixed cfb3d08d868df226e193d57bf26b24023fb3a04d
+    Unstaged changes after reset:
+    M       Algorithms/git tutorial/file1.txt
+
+    aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+    $ git status
+    On branch master
+    Your branch is ahead of 'origin/master' by 11 commits.
+      (use "git push" to publish your local commits)
+    Changes not staged for commit:
+      (use "git add <file>..." to update what will be committed)
+      (use "git checkout -- <file>..." to discard changes in working directory)
+
+            modified:   file1.txt
+
+    no changes added to commit (use "git add" and/or "git commit -a")
+
+    aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+    $ git reset --mixed 588a57e1ccd92cdede363b3bdce42c7ab81dff88
+
+    aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+    $ git status
+    On branch master
+    Your branch is ahead of 'origin/master' by 13 commits.
+      (use "git push" to publish your local commits)
+    nothing to commit, working tree clean
+
+git reset --soft
+git reset --mixed
+git reset --hard
+
+
+
+How to removed untracked files?
+git clean is the command
+$ git clean
+fatal: clean.requireForce defaults to true and neither -i, -n, nor -f given; refusing to clean
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git clean -n
+Would remove bad file.txt
+
+git clean -n tells which files will be removed form current directory
+git clean -d -n tells which files and dirs will be removed
+
+git clean -d -f actually removes the directoris and files inside those directories.
+git clean -f removes files which were specified in git clean -n
+
+reverting a specific commit
+git revert 588a57e1ccd92cdede363b3bdce42c7ab81dff88
+
+git ignore
+
+.gitignore in root of project
