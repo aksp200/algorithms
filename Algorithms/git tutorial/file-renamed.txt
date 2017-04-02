@@ -3,3 +3,5 @@ to check if directory is a got repo type :
 git status
 to initialize a repo :
 git init
+
+how to undo the changes in working directory?
