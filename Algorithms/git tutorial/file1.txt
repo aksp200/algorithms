@@ -250,3 +250,7 @@ git rm --cached <filename>
 
 
 git ignores empty directories. It is made for tracking files.
+
+If you want to keep a directory then create a file in that directory.
+By convention, people create file .gitkeep as :
+$touch .gitkeep
