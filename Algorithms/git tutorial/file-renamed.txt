@@ -5,3 +5,8 @@ to initialize a repo :
 git init
 
 how to undo the changes in working directory?
+git checkout -- git\ tutorial/file-renamed.txt
+double dash is used to avoid confusion between branch and file to be overwritten.
+
+how to undo the changes in staging area?
+git reset HEAD unwanted\ file.txt
