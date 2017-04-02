@@ -85,8 +85,3 @@ After doing this, you may fix the identity used for this commit with:
 
 Using rest to undo many commits
 git reset
-
-
-adding a garbage text again
-
-garbage 2
