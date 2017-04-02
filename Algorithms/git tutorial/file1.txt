@@ -254,3 +254,67 @@ git ignores empty directories. It is made for tracking files.
 If you want to keep a directory then create a file in that directory.
 By convention, people create file .gitkeep as :
 $touch .gitkeep
+
+how to navigate commit tree?
+tree-ish
+
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git ls-tree HEAD
+100644 blob 43737c672e6ee2a79b24a1af2f2a316797d0f028    .gitignore
+040000 tree 39b9ad9e7ef6c60816dbd2dc7c1bf37223cb8a39    Algorithms
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ cd Algorithms/
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git ls-tree HEAD
+100644 blob 63b7e892d1ebf1eeb9df3d8d71e5bedb134487c1    .classpath
+100644 blob ae3c1726048cd06b9a143e0376ed46dd9b9a8d53    .gitignore
+100644 blob 2580803efaeec92173e6b065da33e1cb001ad045    .project
+040000 tree b596484c6219e53e71025600c936f0990322c9ac    .settings
+040000 tree 9585e7cc2c7ebf2f776d4113751e1ec0c4159455    git tutorial
+040000 tree a7557514c0d661b11b4d7702ec32e488fb36abd4    src
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git ls-tree master
+100644 blob 63b7e892d1ebf1eeb9df3d8d71e5bedb134487c1    .classpath
+100644 blob ae3c1726048cd06b9a143e0376ed46dd9b9a8d53    .gitignore
+100644 blob 2580803efaeec92173e6b065da33e1cb001ad045    .project
+040000 tree b596484c6219e53e71025600c936f0990322c9ac    .settings
+040000 tree 9585e7cc2c7ebf2f776d4113751e1ec0c4159455    git tutorial
+040000 tree a7557514c0d661b11b4d7702ec32e488fb36abd4    src
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git ls-tree master git\ tutorial/
+100644 blob 0d08ac4da73a0cbabf52a7bf668d52edf8964817    git tutorial/command prompt.txt
+100644 blob 3986224e853fe66655e53b213c8ad0818bbcf9f1    git tutorial/file1.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git ls-tree master^ git\ tutorial/
+100644 blob 0d08ac4da73a0cbabf52a7bf668d52edf8964817    git tutorial/command prompt.txt
+100644 blob 812491f180812f7694af3e9b9150706d00562072    git tutorial/file1.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git ls-tree master~ git\ tutorial/
+100644 blob 0d08ac4da73a0cbabf52a7bf668d52edf8964817    git tutorial/command prompt.txt
+100644 blob 812491f180812f7694af3e9b9150706d00562072    git tutorial/file1.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git ls-tree master~2 git\ tutorial/
+100644 blob 0d08ac4da73a0cbabf52a7bf668d52edf8964817    git tutorial/command prompt.txt
+100644 blob 80d27994280004a7c49efd8ac4699cb2834d6ab1    git tutorial/file1.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git ls-tree 9585e7cc2c7ebf2f776d4113751e1ec0c4159455
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ cd ..
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git ls-tree 9585e7cc2c7ebf2f776d4113751e1ec0c4159455
+100644 blob 0d08ac4da73a0cbabf52a7bf668d52edf8964817    command prompt.txt
+100644 blob 3986224e853fe66655e53b213c8ad0818bbcf9f1    file1.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$
