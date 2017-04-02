@@ -65,3 +65,23 @@ After doing this, you may fix the identity used for this commit with:
 aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
 
 how to use git revert?
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git revert 4d98aeea7309d2fce2d341ba42493b6f7605b672
+[master 2c23970] Revert "adding garbage text to revert"
+ Committer: Akshay Palshikar <Akshay Palshikar>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 deletions(-)
+
+Using rest to undo many commits
+git reset
