@@ -18,7 +18,24 @@ git commit --amend -m " git commit amed example "
 
 
 To undo changes, rather than amending, make new commits that undo changes.
+Or get specific version of the file you want from git repo.
 
 
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git log
+commit b99df6e0bbed7d3c91e4ff35c85bc60433cd548f
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:54:51 2017 -0700
 
-this is a garbage data
+    adding garbage to rollback
+
+commit 95fbb16b2c971d40b8f636ff9db17113adb3e35f
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:48:53 2017 -0700
+
+    adding all the commands used in the commit
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git checkout ^C
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git checkout 95fbb16b2c971d40b8f636ff9db17113adb3e35f -- file-renamed.txt
