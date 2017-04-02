@@ -238,3 +238,12 @@ Note :  Please commit gitignore file in project root so that everyone using this
 
 what did if code should be added in .gitignore?
 1. compiled shource code. e.g. like .class files in java and target/ directory when using maven.
+
+
+how to add git ignore globally?
+
+git config --global core.excludesfile ~/.gitignore_global
+
+
+how to keep tracking already committed file?
+git rm --cached <filename>
