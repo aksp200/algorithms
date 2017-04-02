@@ -1,4 +1,6 @@
 This is not that branch which was created in one line and then seitch to in other.
 This branch is created with git chechout -b <branch_name>
 
+this text may cause conflict.
+
 test text for merge.
