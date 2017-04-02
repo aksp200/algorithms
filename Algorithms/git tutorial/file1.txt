@@ -234,4 +234,7 @@ $ cat .gitignore
 .settings/
 
 
-Note :  Please commit gitignore file in project root so that everyone using this project will be able to ignore the same kind of files 
+Note :  Please commit gitignore file in project root so that everyone using this project will be able to ignore the same kind of files
+
+what did if code should be added in .gitignore?
+1. compiled shource code. e.g. like .class files in java and target/ directory when using maven.
