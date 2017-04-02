@@ -592,3 +592,68 @@ index 7b80efe..80d2799 100644
 +git rm --cached <filename>
 
 aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+
+
+How to create a branch?
+
+#check branches (* - current branch)
+$ git branch
+* master
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git branch
+* master
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git branch new_feature
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git branch
+* master
+  new_feature
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git push
+Everything up-to-date
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ ls -la .git/refs/heads
+total 2
+drwxr-xr-x 1 aksma 197610  0 Apr  2 00:42 .
+drwxr-xr-x 1 aksma 197610  0 Apr  1 18:09 ..
+-rw-r--r-- 1 aksma 197610 41 Apr  2 00:29 master
+-rw-r--r-- 1 aksma 197610 41 Apr  2 00:42 new_feature
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+
+
+How to switch to branch?
+
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git branch
+* master
+  new_feature
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ cat .git/H
+HEAD   hooks/
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ cat .git/H
+HEAD   hooks/
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ cat .git/HEAD
+ref: refs/heads/master
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git checkout new_feature
+M       Algorithms/git tutorial/command prompt.txt
+M       Algorithms/git tutorial/file1.txt
+Switched to branch 'new_feature'
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (new_feature)
+$ git branch
+  master
+* new_feature
