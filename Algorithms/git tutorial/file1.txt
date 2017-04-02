@@ -318,3 +318,277 @@ $ git ls-tree 9585e7cc2c7ebf2f776d4113751e1ec0c4159455
 
 aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
 $
+
+how to get more from commit log?
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git show --format=oneline HEAD
+01ca37799a1842ef9a00bd2cbd26794ab556d2b3 ls-tree tree-ish traverse tree
+diff --git a/Algorithms/git tutorial/command prompt.txt b/Algorithms/git tutorial/command prompt.txt
+index 0d08ac4..098cc20 100644
+--- a/Algorithms/git tutorial/command prompt.txt
++++ b/Algorithms/git tutorial/command prompt.txt
+@@ -2819,3 +2819,2420 @@ $ git reset ^C
+
+ aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+ $
++
++
++$ git push
++Counting objects: 5, done.
++Delta compression using up to 4 threads.
++Compressing objects: 100% (3/3), done.
++Writing objects: 100% (5/5), 479 bytes | 0 bytes/s, done.
++Total 5 (delta 1), reused 0 (delta 0)
++remote: Resolving deltas: 100% (1/1), completed with 1 local objects.
++To https://github.com/akshaypalshikar/algorithms.git
++   b8924be..7a7982a  master -> master
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git mv git\ tutorial/file1.txt git\ tutorial/file-renamed.txt
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git status
++On branch master
++Your branch is up-to-date with 'origin/master'.
++Changes to be committed:
++  (use "git reset HEAD <file>..." to unstage)
++
++        renamed:    git tutorial/file1.txt -> git tutorial/file-renamed.txt
++
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git commit -m "file rename example"
++[master da11818] file rename example
++ Committer: Akshay Palshikar <Akshay Palshikar>
++Your name and email address were configured automatically based
++on your username and hostname. Please check that they are accurate.
++You can suppress this message by setting them explicitly. Run the
++following command and follow the instructions in your editor to edit
++your configuration file:
++
++    git config --global --edit
++
++After doing this, you may fix the identity used for this commit with:
++
++    git commit --amend --reset-author
++
++ 1 file changed, 0 insertions(+), 0 deletions(-)
++ rename Algorithms/git tutorial/{file1.txt => file-renamed.txt} (100%)
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ whoami
++aksma
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git push
++Counting objects: 4, done.
++Delta compression using up to 4 threads.
++Compressing objects: 100% (2/2), done.
++Writing objects: 100% (4/4), 348 bytes | 0 bytes/s, done.
++Total 4 (delta 1), reused 0 (delta 0)
++remote: Resolving deltas: 100% (1/1), completed with 1 local objects.
++To https://github.com/akshaypalshikar/algorithms.git
++   7a7982a..da11818  master -> master
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ celar
++bash: celar: command not found
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ clear
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ whoami
++aksma
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git status
++On branch master
++Your branch is up-to-date with 'origin/master'.
++Changes not staged for commit:
++  (use "git add <file>..." to update what will be committed)
++  (use "git checkout -- <file>..." to discard changes in working directory)
++
++        modified:   git tutorial/file-renamed.txt
++
++no changes added to commit (use "git add" and/or "git commit -a")
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git add git\ tutorial/file-renamed.txt
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git commit -m "added about how to undo changes in working directory"
++[master a5318c6] added about how to undo changes in working directory
++ Committer: Akshay Palshikar <Akshay Palshikar>
++Your name and email address were configured automatically based
++on your username and hostname. Please check that they are accurate.
++You can suppress this message by setting them explicitly. Run the
++following command and follow the instructions in your editor to edit
++your configuration file:
++
++    git config --global --edit
++
++After doing this, you may fix the identity used for this commit with:
++
++    git commit --amend --reset-author
++
++ 1 file changed, 2 insertions(+)
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git statua
++git: 'statua' is not a git command. See 'git --help'.
++
++Did you mean this?
++        status
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ status
++bash: status: command not found
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git status
++On branch master
++Your branch is ahead of 'origin/master' by 1 commit.
++  (use "git push" to publish your local commits)
++Changes not staged for commit:
++  (use "git add <file>..." to update what will be committed)
++  (use "git checkout -- <file>..." to discard changes in working directory)
++
++        modified:   git tutorial/file-renamed.txt
++
++no changes added to commit (use "git add" and/or "git commit -a")
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git checkout -- git\ tutorial/file-renamed.txt
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ ^C
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git ststus
++git: 'ststus' is not a git command. See 'git --help'.
++
++Did you mean this?
++        status
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git statis
++git: 'statis' is not a git command. See 'git --help'.
++
++Did you mean this?
++        status
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git status
++On branch master
++Your branch is ahead of 'origin/master' by 1 commit.
++  (use "git push" to publish your local commits)
++Changes not staged for commit:
++  (use "git add <file>..." to update what will be committed)
++  (use "git checkout -- <file>..." to discard changes in working directory)
++
++        modified:   git tutorial/file-renamed.txt
++
++Untracked files:
++  (use "git add <file>..." to include in what will be committed)
++
++        unwanted file.txt
++
++no changes added to commit (use "git add" and/or "git commit -a")
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git add unwanted\ file.txt
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git status
++On branch master
++Your branch is ahead of 'origin/master' by 1 commit.
++  (use "git push" to publish your local commits)
++Changes to be committed:
++  (use "git reset HEAD <file>..." to unstage)
++
++        new file:   unwanted file.txt
++
++Changes not staged for commit:
++  (use "git add <file>..." to update what will be committed)
++  (use "git checkout -- <file>..." to discard changes in working directory)
++
++        modified:   git tutorial/file-renamed.txt
++
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git reset HEAD unwanted\ file.txt
++Unstaged changes after reset:
++M       Algorithms/git tutorial/file-renamed.txt
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git status
++On branch master
++Your branch is ahead of 'origin/master' by 1 commit.
++  (use "git push" to publish your local commits)
++Changes not staged for commit:
++  (use "git add <file>..." to update what will be committed)
++  (use "git checkout -- <file>..." to discard changes in working directory)
++
++        modified:   git tutorial/file-renamed.txt
++
++Untracked files:
++  (use "git add <file>..." to include in what will be committed)
++
++        unwanted file.txt
++
++no changes added to commit (use "git add" and/or "git commit -a")
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ rm unwanted\ file.txt
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ ^C
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git add git\ tutorial/file-renamed.txt
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git commit
++Aborting commit due to empty commit message.
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git commit -m "how to undo the changes in staging area?"
++[master f86107f] how to undo the changes in staging area?
++ Committer: Akshay Palshikar <Akshay Palshikar>
++Your name and email address were configured automatically based
++on your username and hostname. Please check that they are accurate.
++You can suppress this message by setting them explicitly. Run the
++following command and follow the instructions in your editor to edit
++your configuration file:
++
++    git config --global --edit
++
++After doing this, you may fix the identity used for this commit with:
++
++    git commit --amend --reset-author
++
++ 1 file changed, 5 insertions(+)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git show --format=oneline HEAD~3
+b09bdeb4466f1007e53f8a8c60aabed89cd9bdca untrack already committed files
+diff --git a/Algorithms/git tutorial/file1.txt b/Algorithms/git tutorial/file1.txt
+index 7b80efe..80d2799 100644
+--- a/Algorithms/git tutorial/file1.txt
++++ b/Algorithms/git tutorial/file1.txt
+@@ -238,3 +238,12 @@ Note :  Please commit gitignore file in project root so that everyone using this
+
+ what did if code should be added in .gitignore?
+ 1. compiled shource code. e.g. like .class files in java and target/ directory when using maven.
++
++
++how to add git ignore globally?
++
++git config --global core.excludesfile ~/.gitignore_global
++
++
++how to keep tracking already committed file?
++git rm --cached <filename>
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)

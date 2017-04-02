@@ -5236,3 +5236,2955 @@ $
 
 aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
 $
+
+
+
+$ git push
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 479 bytes | 0 bytes/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local objects.
+To https://github.com/akshaypalshikar/algorithms.git
+   b8924be..7a7982a  master -> master
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git mv git\ tutorial/file1.txt git\ tutorial/file-renamed.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        renamed:    git tutorial/file1.txt -> git tutorial/file-renamed.txt
+
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git commit -m "file rename example"
+[master da11818] file rename example
+ Committer: Akshay Palshikar <Akshay Palshikar>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename Algorithms/git tutorial/{file1.txt => file-renamed.txt} (100%)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ whoami
+aksma
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git push
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 348 bytes | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local objects.
+To https://github.com/akshaypalshikar/algorithms.git
+   7a7982a..da11818  master -> master
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ celar
+bash: celar: command not found
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ clear
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ whoami
+aksma
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   git tutorial/file-renamed.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git add git\ tutorial/file-renamed.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git commit -m "added about how to undo changes in working directory"
+[master a5318c6] added about how to undo changes in working directory
+ Committer: Akshay Palshikar <Akshay Palshikar>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git statua
+git: 'statua' is not a git command. See 'git --help'.
+
+Did you mean this?
+        status
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ status
+bash: status: command not found
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   git tutorial/file-renamed.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git checkout -- git\ tutorial/file-renamed.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ ^C
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git ststus
+git: 'ststus' is not a git command. See 'git --help'.
+
+Did you mean this?
+        status
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git statis
+git: 'statis' is not a git command. See 'git --help'.
+
+Did you mean this?
+        status
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   git tutorial/file-renamed.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        unwanted file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git add unwanted\ file.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   unwanted file.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   git tutorial/file-renamed.txt
+
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git reset HEAD unwanted\ file.txt
+Unstaged changes after reset:
+M       Algorithms/git tutorial/file-renamed.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   git tutorial/file-renamed.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        unwanted file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ rm unwanted\ file.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ ^C
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git add git\ tutorial/file-renamed.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git commit
+Aborting commit due to empty commit message.
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git commit -m "how to undo the changes in staging area?"
+[master f86107f] how to undo the changes in staging area?
+ Committer: Akshay Palshikar <Akshay Palshikar>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 5 insertions(+)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ bahs
+bash: bahs: command not found
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ bash
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git add git\ tutorial/file-renamed.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git commit
+Aborting commit due to empty commit message.
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git commit -m "git commit amed example prep"
+[master e1f7dc7] git commit amed example prep
+ Committer: Akshay Palshikar <Akshay Palshikar>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ ^C
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git add git\ tutorial/file-renamed.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git commit --amend -m "git commit amed example"
+[master bdadebe] git commit amed example
+ Date: Sat Apr 1 18:43:20 2017 -0700
+ Committer: Akshay Palshikar <Akshay Palshikar>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 5 insertions(+)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git push
+Counting objects: 15, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (15/15), 1.34 KiB | 0 bytes/s, done.
+Total 15 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), completed with 1 local objects.
+To https://github.com/akshaypalshikar/algorithms.git
+   da11818..bdadebe  master -> master
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ cd git\ tutorial/
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ ls
+'command prompt.txt'  file-renamed.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git add command\ prompt.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git commit -m "adding all the commands used in the commit"
+[master 95fbb16] adding all the commands used in the commit
+ Committer: Akshay Palshikar <Akshay Palshikar>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 307 insertions(+)
+ create mode 100644 Algorithms/git tutorial/command prompt.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git log
+commit 95fbb16b2c971d40b8f636ff9db17113adb3e35f
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:48:53 2017 -0700
+
+    adding all the commands used in the commit
+
+commit bdadebe17c53a73bb16c45208a047ef0951479cd
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:43:20 2017 -0700
+
+    git commit amed example
+
+commit f86107fe1d03de6ee6f0a978a5e7c9a87e8dccda
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:37:12 2017 -0700
+
+    how to undo the changes in staging area?
+
+commit a5318c696d4edb8932a89812708a390a9e548827
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:28:43 2017 -0700
+
+    added about how to undo changes in working directory
+
+commit da11818c971324f430b206e1e064158385be73d7
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:21:25 2017 -0700
+
+    file rename example
+
+commit 7a7982addbfc6a2f4cc25e34bf58fbb583ebfa18
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:19:37 2017 -0700
+
+    added git tutorial file
+
+commit b8924befdf6d5717e35d1918b503294432e0b7d3
+Author: Akshay <aksmakesit@gmail.com>
+Date:   Sat Aug 20 18:24:35 2016 -0400
+
+    Fibonacci series
+
+commit b2a3eb4c951e82ac6c110d3482c939b70cad5171
+Author: Akshay <aksmakesit@gmail.com>
+Date:   Sat Aug 20 17:04:10 2016 -0400
+
+    Initial Commit
+
+commit 787bc81595c7015be25355238084fb28d4691ec5
+Author: Akshay <aksmakesit@gmail.com>
+Date:   Sat Aug 20 16:48:19 2016 -0400
+
+    Initial Commit
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git add file-renamed.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git commit - "prep for git commit which undo the changes committed"
+error: pathspec '-' did not match any file(s) known to git.
+error: pathspec 'prep for git commit which undo the changes committed' did not match any file(s) known to git.
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git add file-renamed.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git commit -m "adding garbage to rollback"
+[master b99df6e] adding garbage to rollback
+ Committer: Akshay Palshikar <Akshay Palshikar>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 7 insertions(+)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git log
+commit b99df6e0bbed7d3c91e4ff35c85bc60433cd548f
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:54:51 2017 -0700
+
+    adding garbage to rollback
+
+commit 95fbb16b2c971d40b8f636ff9db17113adb3e35f
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:48:53 2017 -0700
+
+    adding all the commands used in the commit
+
+commit bdadebe17c53a73bb16c45208a047ef0951479cd
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:43:20 2017 -0700
+
+    git commit amed example
+
+commit f86107fe1d03de6ee6f0a978a5e7c9a87e8dccda
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:37:12 2017 -0700
+
+    how to undo the changes in staging area?
+
+commit a5318c696d4edb8932a89812708a390a9e548827
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:28:43 2017 -0700
+
+    added about how to undo changes in working directory
+
+commit da11818c971324f430b206e1e064158385be73d7
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:21:25 2017 -0700
+
+    file rename example
+
+commit 7a7982addbfc6a2f4cc25e34bf58fbb583ebfa18
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:19:37 2017 -0700
+
+    added git tutorial file
+
+commit b8924befdf6d5717e35d1918b503294432e0b7d3
+Author: Akshay <aksmakesit@gmail.com>
+Date:   Sat Aug 20 18:24:35 2016 -0400
+
+    Fibonacci series
+
+commit b2a3eb4c951e82ac6c110d3482c939b70cad5171
+Author: Akshay <aksmakesit@gmail.com>
+Date:   Sat Aug 20 17:04:10 2016 -0400
+
+    Initial Commit
+
+commit 787bc81595c7015be25355238084fb28d4691ec5
+Author: Akshay <aksmakesit@gmail.com>
+Date:   Sat Aug 20 16:48:19 2016 -0400
+
+    Initial Commit
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git checkout ^C
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git checkout 95fbb16b2c971d40b8f636ff9db17113adb3e35f -- file-renamed.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git checkout b99df6e0bbed7d3c91e4ff35c85bc60433cd548f -- file-renamed.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git checkout b99df6e0bbed7d3c91e4ff35c85bc60433cd548f -- file-renamed.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git add file-renamed.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git commit -m "how to checkout spefici version from repo"
+[master ca9b9fb] how to checkout spefici version from repo
+ Committer: Akshay Palshikar <Akshay Palshikar>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 18 insertions(+), 1 deletion(-)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ ^C
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git add file-renamed.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git commit -m "committing file from old version again"
+[master 0ae0e0f] committing file from old version again
+ Committer: Akshay Palshikar <Akshay Palshikar>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 24 insertions(+)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git add file-renamed.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git commit -m "before starting git revert"
+[master f49918a] before starting git revert
+ Committer: Akshay Palshikar <Akshay Palshikar>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git add file-renamed.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git commit -m "adding garbage text to revert"
+[master 4d98aee] adding garbage text to revert
+ Committer: Akshay Palshikar <Akshay Palshikar>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git log
+commit 4d98aeea7309d2fce2d341ba42493b6f7605b672
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:22:04 2017 -0700
+
+    adding garbage text to revert
+
+commit f49918a9562affeb2fffac250886aabf60009b06
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:21:27 2017 -0700
+
+    before starting git revert
+
+commit 0ae0e0f8167da60db3b280ec8da3d975b142cc85
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:17:12 2017 -0700
+
+    committing file from old version again
+
+commit ca9b9fb69bf6ac8a89e79a17c0c596c7d91e9d27
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:59:28 2017 -0700
+
+    how to checkout spefici version from repo
+
+commit b99df6e0bbed7d3c91e4ff35c85bc60433cd548f
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:54:51 2017 -0700
+
+    adding garbage to rollback
+
+commit 95fbb16b2c971d40b8f636ff9db17113adb3e35f
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:48:53 2017 -0700
+
+    adding all the commands used in the commit
+
+commit bdadebe17c53a73bb16c45208a047ef0951479cd
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:43:20 2017 -0700
+
+    git commit amed example
+
+commit f86107fe1d03de6ee6f0a978a5e7c9a87e8dccda
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:37:12 2017 -0700
+
+    how to undo the changes in staging area?
+
+commit a5318c696d4edb8932a89812708a390a9e548827
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:28:43 2017 -0700
+
+    added about how to undo changes in working directory
+
+commit da11818c971324f430b206e1e064158385be73d7
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:21:25 2017 -0700
+
+    file rename example
+
+commit 7a7982addbfc6a2f4cc25e34bf58fbb583ebfa18
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:19:37 2017 -0700
+
+    added git tutorial file
+
+commit b8924befdf6d5717e35d1918b503294432e0b7d3
+Author: Akshay <aksmakesit@gmail.com>
+Date:   Sat Aug 20 18:24:35 2016 -0400
+
+    Fibonacci series
+
+commit b2a3eb4c951e82ac6c110d3482c939b70cad5171
+Author: Akshay <aksmakesit@gmail.com>
+Date:   Sat Aug 20 17:04:10 2016 -0400
+
+    Initial Commit
+
+commit 787bc81595c7015be25355238084fb28d4691ec5
+Author: Akshay <aksmakesit@gmail.com>
+Date:   Sat Aug 20 16:48:19 2016 -0400
+
+    Initial Commit
+(END)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git revert 4d98aeea7309d2fce2d341ba42493b6f7605b672
+[master 2c23970] Revert "adding garbage text to revert"
+ Committer: Akshay Palshikar <Akshay Palshikar>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 deletions(-)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git log
+commit 2c239706751a6eeef5e2ee0e13437e03b0b26926
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:22:45 2017 -0700
+
+    Revert "adding garbage text to revert"
+
+    This reverts commit 4d98aeea7309d2fce2d341ba42493b6f7605b672.
+
+commit 4d98aeea7309d2fce2d341ba42493b6f7605b672
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:22:04 2017 -0700
+
+    adding garbage text to revert
+
+commit f49918a9562affeb2fffac250886aabf60009b06
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:21:27 2017 -0700
+
+    before starting git revert
+
+commit 0ae0e0f8167da60db3b280ec8da3d975b142cc85
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:17:12 2017 -0700
+
+    committing file from old version again
+
+commit ca9b9fb69bf6ac8a89e79a17c0c596c7d91e9d27
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:59:28 2017 -0700
+
+    how to checkout spefici version from repo
+
+commit b99df6e0bbed7d3c91e4ff35c85bc60433cd548f
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:54:51 2017 -0700
+
+    adding garbage to rollback
+
+commit 95fbb16b2c971d40b8f636ff9db17113adb3e35f
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:48:53 2017 -0700
+
+    adding all the commands used in the commit
+
+commit bdadebe17c53a73bb16c45208a047ef0951479cd
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:43:20 2017 -0700
+
+    git commit amed example
+
+commit f86107fe1d03de6ee6f0a978a5e7c9a87e8dccda
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:37:12 2017 -0700
+
+    how to undo the changes in staging area?
+
+commit a5318c696d4edb8932a89812708a390a9e548827
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:28:43 2017 -0700
+
+    added about how to undo changes in working directory
+
+commit da11818c971324f430b206e1e064158385be73d7
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:21:25 2017 -0700
+
+    file rename example
+
+commit 7a7982addbfc6a2f4cc25e34bf58fbb583ebfa18
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:19:37 2017 -0700
+
+    added git tutorial file
+
+commit b8924befdf6d5717e35d1918b503294432e0b7d3
+Author: Akshay <aksmakesit@gmail.com>
+Date:   Sat Aug 20 18:24:35 2016 -0400
+
+    Fibonacci series
+
+commit b2a3eb4c951e82ac6c110d3482c939b70cad5171
+Author: Akshay <aksmakesit@gmail.com>
+Date:   Sat Aug 20 17:04:10 2016 -0400
+
+    Initial Commit
+
+commit 787bc81595c7015be25355238084fb28d4691ec5
+Author: Akshay <aksmakesit@gmail.com>
+Date:   Sat Aug 20 16:48:19 2016 -0400
+
+    Initial Commit
+(END)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git add command\ prompt.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git commit -m "added git commands that are run till now"
+[master ff3dd44] added git commands that are run till now
+ Committer: Akshay Palshikar <Akshay Palshikar>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 788 insertions(+)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git log
+commit ff3dd440f7876bdb569c3f3e1add1b2493293ac0
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:23:59 2017 -0700
+
+    added git commands that are run till now
+
+commit 2c239706751a6eeef5e2ee0e13437e03b0b26926
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:22:45 2017 -0700
+
+    Revert "adding garbage text to revert"
+
+    This reverts commit 4d98aeea7309d2fce2d341ba42493b6f7605b672.
+
+commit 4d98aeea7309d2fce2d341ba42493b6f7605b672
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:22:04 2017 -0700
+
+    adding garbage text to revert
+
+commit f49918a9562affeb2fffac250886aabf60009b06
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:21:27 2017 -0700
+
+    before starting git revert
+
+commit 0ae0e0f8167da60db3b280ec8da3d975b142cc85
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:17:12 2017 -0700
+
+    committing file from old version again
+
+commit ca9b9fb69bf6ac8a89e79a17c0c596c7d91e9d27
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:59:28 2017 -0700
+
+    how to checkout spefici version from repo
+
+commit b99df6e0bbed7d3c91e4ff35c85bc60433cd548f
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:54:51 2017 -0700
+
+    adding garbage to rollback
+
+commit 95fbb16b2c971d40b8f636ff9db17113adb3e35f
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:48:53 2017 -0700
+
+    adding all the commands used in the commit
+
+commit bdadebe17c53a73bb16c45208a047ef0951479cd
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:43:20 2017 -0700
+
+    git commit amed example
+
+commit f86107fe1d03de6ee6f0a978a5e7c9a87e8dccda
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:37:12 2017 -0700
+
+    how to undo the changes in staging area?
+
+commit a5318c696d4edb8932a89812708a390a9e548827
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:28:43 2017 -0700
+
+    added about how to undo changes in working directory
+
+commit da11818c971324f430b206e1e064158385be73d7
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:21:25 2017 -0700
+
+    file rename example
+
+commit 7a7982addbfc6a2f4cc25e34bf58fbb583ebfa18
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:19:37 2017 -0700
+
+    added git tutorial file
+
+commit b8924befdf6d5717e35d1918b503294432e0b7d3
+Author: Akshay <aksmakesit@gmail.com>
+Date:   Sat Aug 20 18:24:35 2016 -0400
+
+    Fibonacci series
+
+commit b2a3eb4c951e82ac6c110d3482c939b70cad5171
+Author: Akshay <aksmakesit@gmail.com>
+Date:   Sat Aug 20 17:04:10 2016 -0400
+
+    Initial Commit
+
+commit 787bc81595c7015be25355238084fb28d4691ec5
+Author: Akshay <aksmakesit@gmail.com>
+Date:   Sat Aug 20 16:48:19 2016 -0400
+
+    Initial Commit
+(END)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ ^C
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git add  file-renamed.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git mv file-renamed.txt file1.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 8 commits.
+  (use "git push" to publish your local commits)
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        renamed:    file-renamed.txt -> file1.txt
+
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git commit -m "renamed the file"
+[master 3d057e1] renamed the file
+ Committer: Akshay Palshikar <Akshay Palshikar>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 20 insertions(+)
+ rename Algorithms/git tutorial/{file-renamed.txt => file1.txt} (75%)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git add file1.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git -m "added text to be reverted"
+Unknown option: -m
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git log -n 3
+commit 3d057e15a2f89effbd4ba367589cac4a9d3f0add
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:30:08 2017 -0700
+
+    renamed the file
+
+commit ff3dd440f7876bdb569c3f3e1add1b2493293ac0
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:23:59 2017 -0700
+
+    added git commands that are run till now
+
+commit 2c239706751a6eeef5e2ee0e13437e03b0b26926
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:22:45 2017 -0700
+
+    Revert "adding garbage text to revert"
+
+    This reverts commit 4d98aeea7309d2fce2d341ba42493b6f7605b672.
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git add file1.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git commit -m "adding more garbage"
+[master 9c0eef1] adding more garbage
+ Committer: Akshay Palshikar <Akshay Palshikar>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 5 insertions(+)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git log -n 3
+commit 9c0eef14148051a1ec7119f7fe300bb0b486fc7c
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:35:02 2017 -0700
+
+    adding more garbage
+
+commit 3d057e15a2f89effbd4ba367589cac4a9d3f0add
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:30:08 2017 -0700
+
+    renamed the file
+
+commit ff3dd440f7876bdb569c3f3e1add1b2493293ac0
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:23:59 2017 -0700
+
+    added git commands that are run till now
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git add file1.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git commit -m "removed garbage"
+[master cfb3d08] removed garbage
+ Committer: Akshay Palshikar <Akshay Palshikar>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 5 deletions(-)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git add file1.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git commit -m "garbage 1"
+[master 270d3d6] garbage 1
+ Committer: Akshay Palshikar <Akshay Palshikar>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ bash
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git commit -m "garbage 2"
+On branch master
+Your branch is ahead of 'origin/master' by 12 commits.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+        modified:   file1.txt
+
+no changes added to commit
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git add file1.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git commit -m "garbage 2"
+[master 588a57e] garbage 2
+ Committer: Akshay Palshikar <Akshay Palshikar>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git log -n 3
+commit 588a57e1ccd92cdede363b3bdce42c7ab81dff88
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:37:30 2017 -0700
+
+    garbage 2
+
+commit 270d3d6c0a910e480c5ebec94036d9670b21acba
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:36:53 2017 -0700
+
+    garbage 1
+
+commit cfb3d08d868df226e193d57bf26b24023fb3a04d
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:36:31 2017 -0700
+
+    removed garbage
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ ls
+'command prompt.txt'  file1.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ cd ..
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ ls
+'git tutorial'  src
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ ls -a
+.  ..  .classpath  .gitignore  .project  .settings  'git tutorial'  src
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ cd ..
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ ls
+Algorithms
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ ls git
+ls: cannot access 'git': No such file or directory
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ pwd
+/c/Users/aksma/git/algorithms
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ cd
+.git/       Algorithms/
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ cd
+.git/       Algorithms/
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ cd Algorithms/
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ cd git\ tutorial/
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ ls
+'command prompt.txt'  file1.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$
+Display all 4920 possibilities? (y or n)
+!
+./
+:
+ACCTRES.dll
+ACPBackgroundManagerPolicy.dll
+AERTAC64.dll
+AERTAR64.dll
+AJRouter.dll
+APHostClient.dll
+APHostRes.dll
+APHostService.dll
+ARP.EXE
+ASInstanceRename.exe
+AUDIOKSE.dll
+AUTOADMIN.dll
+AboveLockAppHost.dll
+AccountsRt.dll
+AcpiServiceVnA64.dll
+ActionCenter.dll
+ActionCenterCPL.dll
+ActionQueue.dll
+ActivationClient.dll
+ActivationManager.dll
+ActiveSyncCsp.dll
+ActiveSyncProvider.dll
+AddressParser.dll
+AllJoynDiscoveryPlugin.dll
+AmRdrIco.icl
+AmUStor2.dll
+AmtWsMan.dll
+AppCapture.dll
+AppContracts.dll
+AppExtension.dll
+AppHostRegistrationVerifier.exe
+AppLockerCSP.dll
+AppReadiness.dll
+AppXApplicabilityBlob.dll
+AppXDeploymentClient.dll
+AppXDeploymentExtensions.desktop.dll
+AppXDeploymentExtensions.onecore.dll
+AppXDeploymentServer.dll
+Apphlpdm.dll
+ApplicationFrame.dll
+ApplicationFrameHost.exe
+AppointmentActivation.dll
+AppointmentApis.dll
+ApproveChildRequest.exe
+AppxAllUserStore.dll
+AppxApplicabilityEngine.dll
+AppxPackaging.dll
+AppxSip.dll
+AppxStreamingDataSourcePS.dll
+AppxSysprep.dll
+AtBroker.exe
+AudioEndpointBuilder.dll
+AudioEng.dll
+AudioSes.dll
+AudioSrvPolicyManager.dll
+AuthBroker.dll
+AuthBrokerUI.dll
+AuthExt.dll
+AuthFWGP.dll
+AuthFWSnapin.dll
+AuthFWWizFwk.dll
+AuthHost.exe
+AuthHostProxy.dll
+AxInstSv.dll
+AxInstUI.exe
+AzSqlExt.dll
+AzureSettingSyncProvider.dll
+BCP47Langs.dll
+BFE.DLL
+BOOTVID.DLL
+BWContextHandler.dll
+BackgroundMediaPolicy.dll
+BackgroundTransferHost.exe
+BarcodeProvisioningPlugin.dll
+BcastDVRHelper.dll
+BdeHdCfgLib.dll
+BdeUISrv.exe
+BidsMgmt.dll
+BingASDS.dll
+BingMaps.dll
+BingOnlineServices.dll
+BioCredProv.dll
+BioIso.exe
+BitLockerDeviceEncryption.exe
+BitLockerWizardElev.exe
+BitsProxy.dll
+BlbEvents.dll
+BluetoothApis.dll
+BluetoothDesktopHandlers.dll
+BootMenuUX.dll
+BrokerLib.dll
+BrowserSettingSync.dll
+BthHFSrv.dll
+BthMtpContextHandler.dll
+BthRadioMedia.dll
+BthTelemetry.dll
+BthpanContextHandler.dll
+Bubbles.scr
+ByteCodeGenerator.exe
+C1XStngs.dll
+CHxReadingStringIME.dll
+CIRCoInst.dll
+CNC_BXC.dll
+CNC_BXI.dll
+CNC_BXL.dll
+CNHI12A.DLL
+CNHL12A.DLL
+CNHMCA6.dll
+CNHMCAN.DLL
+CNHW12A.DLL
+CNMLMBX.DLL
+COLORCNV.DLL
+CONEQMSAPOGUILibrary.dll
+CPFilters.dll
+CSystemEventsBrokerClient.dll
+CX64APO.dll
+C_G18030.DLL
+C_IS2022.DLL
+C_ISCII.DLL
+CallButtons.ProxyStub.dll
+CallButtons.dll
+CallHistoryClient.dll
+CameraCaptureUI.dll
+CameraSettingsUIHost.exe
+CastLaunch.dll
+CastSrv.exe
+CastingShellExt.dll
+CbtBackgroundManagerPolicy.dll
+CellularAPI.dll
+CertEnroll.dll
+CertEnrollCtrl.exe
+CertEnrollUI.dll
+CertPKICmdlet.dll
+CertPolEng.dll
+CfgSPCellular.dll
+CfgSPPolicy.dll
+Chakra.dll
+Chakradiag.dll
+Chakrathunk.dll
+ChatApis.dll
+CheckNetIsolation.exe
+ChsPinyinRanker.dll
+ChsStrokeDS.dll
+ChtCangjieDS.dll
+ChtHkStrokeDS.dll
+ChtQuickDS.dll
+ChxAPDS.dll
+ChxHAPDS.dll
+ClipSVC.dll
+ClipUp.exe
+ClipboardServer.dll
+Clipc.dll
+CloudBackupSettings.dll
+CloudDomainJoinAUG.dll
+CloudDomainJoinDataModelServer.dll
+CloudExperienceHost.dll
+CloudExperienceHostBroker.dll
+CloudExperienceHostBroker.exe
+CloudExperienceHostCommon.dll
+CloudExperienceHostUser.dll
+CloudNotifications.exe
+CloudStorageWizard.exe
+CompMgmtLauncher.exe
+CompPkgSup.dll
+CompatTelRunner.exe
+ComputerDefaults.exe
+ConfigureDistWizard.dll
+ConfigureExpandedStorage.dll
+ConflictViewer.exe
+ConhostV1.dll
+ConhostV2.dll
+ConnectedAccountState.dll
+ConnectionDlg.dll
+ConsentUX.dll
+ConsoleLogon.dll
+ContactActivation.dll
+ContactApis.dll
+ContactHarvesterDS.dll
+ContentDeliveryManager.Utilities.dll
+ControlService.exe
+CopyDatabaseWizard.exe
+CoreMessaging.dll
+CoreMmRes.dll
+CoreUIComponents.dll
+Cortana.Persona.dll
+CortanaMapiHelper.ProxyStub.dll
+CortanaMapiHelper.dll
+CourtesyEngine.dll
+CreatePubWizard.dll
+CredProvDataModel.dll
+CredentialMigrationHandler.dll
+CredentialUIBroker.exe
+CryptoWinRT.dll
+CspCellularSettings.dll
+CspProxy.dll
+CustomUIResource.dll
+D3D12.dll
+D3DCompiler_47.dll
+D3DX9_43.dll
+DAConn.dll
+DAFIoT.dll
+DAFWSD.dll
+DAFWiProv.dll
+DAMM.dll
+DAMediaManager.dll
+DBMaintenancePlanHistory.dll
+DBMaintenanceProperties.dll
+DBmirroring.dll
+DDACLSys.dll
+DDDS.dll
+DDOIProxy.dll
+DDORes.dll
+DDPA64.dll
+DDPA64F3.dll
+DDPD64A.dll
+DDPD64AF3.dll
+DDPO64A.dll
+DDPO64AF3.dll
+DDPP64A.dll
+DDPP64AF3.dll
+DFDWiz.exe
+DMAppsRes.dll
+DMPushRouterCore.dll
+DMRServer.dll
+DMWmiBridgeProv.dll
+DMWmiBridgeProv1.dll
+DReplay.exe
+DReplayCommon.dll
+DReplayServerPS.dll
+DTA.EXE
+DTACLIENT.DLL
+DTASHELL.EXE
+DTEParse.dll
+DTEParseMgd.dll
+DTEPkg.dll
+DTExec.exe
+DTExecUI.exe
+DTS.dll
+DTSBassEnhancementDLL64.dll
+DTSBoostDLL64.dll
+DTSComExprEval.dll
+DTSGFXAPO64.dll
+DTSGFXAPONS64.dll
+DTSGainCompensatorDLL64.dll
+DTSLFXAPO64.dll
+DTSLimiterDLL64.dll
+DTSLog.dll
+DTSNeoPCDLL64.dll
+DTSPipeline.dll
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ dsfd
+bash: dsfd: command not found
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ cd
+command prompt.txt  file1.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ cd
+command prompt.txt  file1.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ cd
+command prompt.txt  file1.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ cd
+command prompt.txt  file1.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ cd
+command prompt.txt  file1.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ cd
+command prompt.txt  file1.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ pwd
+/c/Users/aksma/git/algorithms/Algorithms/git tutorial
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 13 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git reset --soft cfb3d08d868df226e193d57bf26b24023fb3a04d
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git log
+commit cfb3d08d868df226e193d57bf26b24023fb3a04d
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:36:31 2017 -0700
+
+    removed garbage
+
+commit 9c0eef14148051a1ec7119f7fe300bb0b486fc7c
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:35:02 2017 -0700
+
+    adding more garbage
+
+commit 3d057e15a2f89effbd4ba367589cac4a9d3f0add
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:30:08 2017 -0700
+
+    renamed the file
+
+commit ff3dd440f7876bdb569c3f3e1add1b2493293ac0
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:23:59 2017 -0700
+
+    added git commands that are run till now
+
+commit 2c239706751a6eeef5e2ee0e13437e03b0b26926
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:22:45 2017 -0700
+
+    Revert "adding garbage text to revert"
+
+    This reverts commit 4d98aeea7309d2fce2d341ba42493b6f7605b672.
+
+commit 4d98aeea7309d2fce2d341ba42493b6f7605b672
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:22:04 2017 -0700
+
+    adding garbage text to revert
+
+commit f49918a9562affeb2fffac250886aabf60009b06
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:21:27 2017 -0700
+
+    before starting git revert
+
+commit 0ae0e0f8167da60db3b280ec8da3d975b142cc85
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:17:12 2017 -0700
+
+    committing file from old version again
+
+commit ca9b9fb69bf6ac8a89e79a17c0c596c7d91e9d27
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:59:28 2017 -0700
+
+    how to checkout spefici version from repo
+
+commit b99df6e0bbed7d3c91e4ff35c85bc60433cd548f
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:54:51 2017 -0700
+
+    adding garbage to rollback
+
+commit 95fbb16b2c971d40b8f636ff9db17113adb3e35f
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:48:53 2017 -0700
+
+    adding all the commands used in the commit
+
+commit bdadebe17c53a73bb16c45208a047ef0951479cd
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:43:20 2017 -0700
+
+    git commit amed example
+
+commit f86107fe1d03de6ee6f0a978a5e7c9a87e8dccda
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:37:12 2017 -0700
+
+    how to undo the changes in staging area?
+
+commit a5318c696d4edb8932a89812708a390a9e548827
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:28:43 2017 -0700
+
+    added about how to undo changes in working directory
+
+commit da11818c971324f430b206e1e064158385be73d7
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:21:25 2017 -0700
+
+    file rename example
+
+commit 7a7982addbfc6a2f4cc25e34bf58fbb583ebfa18
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:19:37 2017 -0700
+
+    added git tutorial file
+
+commit b8924befdf6d5717e35d1918b503294432e0b7d3
+Author: Akshay <aksmakesit@gmail.com>
+Date:   Sat Aug 20 18:24:35 2016 -0400
+
+    Fibonacci series
+
+commit b2a3eb4c951e82ac6c110d3482c939b70cad5171
+Author: Akshay <aksmakesit@gmail.com>
+Date:   Sat Aug 20 17:04:10 2016 -0400
+
+    Initial Commit
+
+commit 787bc81595c7015be25355238084fb28d4691ec5
+Author: Akshay <aksmakesit@gmail.com>
+Date:   Sat Aug 20 16:48:19 2016 -0400
+
+    Initial Commit
+(END)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git log -n 3
+commit cfb3d08d868df226e193d57bf26b24023fb3a04d
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:36:31 2017 -0700
+
+    removed garbage
+
+commit 9c0eef14148051a1ec7119f7fe300bb0b486fc7c
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:35:02 2017 -0700
+
+    adding more garbage
+
+commit 3d057e15a2f89effbd4ba367589cac4a9d3f0add
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:30:08 2017 -0700
+
+    renamed the file
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 11 commits.
+  (use "git push" to publish your local commits)
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   file1.txt
+
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git diff --staged
+diff --git a/Algorithms/git tutorial/file1.txt b/Algorithms/git tutorial/file1.txt
+index a28fda6..9e9cc9d 100644
+--- a/Algorithms/git tutorial/file1.txt
++++ b/Algorithms/git tutorial/file1.txt
+@@ -85,3 +85,6 @@ After doing this, you may fix the identity used for this commit with:
+
+ Using rest to undo many commits
+ git reset
++
++g1
++g2
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git reset --soft 588a57e1ccd92cdede363b3bdce42c7ab81dff88
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 13 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git log -n 3
+commit 588a57e1ccd92cdede363b3bdce42c7ab81dff88
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:37:30 2017 -0700
+
+    garbage 2
+
+commit 270d3d6c0a910e480c5ebec94036d9670b21acba
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:36:53 2017 -0700
+
+    garbage 1
+
+commit cfb3d08d868df226e193d57bf26b24023fb3a04d
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:36:31 2017 -0700
+
+    removed garbage
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git reset --mixed cfb3d08d868df226e193d57bf26b24023fb3a04d
+Unstaged changes after reset:
+M       Algorithms/git tutorial/file1.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 11 commits.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   file1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git reset --mixed 588a57e1ccd92cdede363b3bdce42c7ab81dff88
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 13 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git log -n 3
+commit 588a57e1ccd92cdede363b3bdce42c7ab81dff88
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:37:30 2017 -0700
+
+    garbage 2
+
+commit 270d3d6c0a910e480c5ebec94036d9670b21acba
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:36:53 2017 -0700
+
+    garbage 1
+
+commit cfb3d08d868df226e193d57bf26b24023fb3a04d
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:36:31 2017 -0700
+
+    removed garbage
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git reset ^C
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git clean
+fatal: clean.requireForce defaults to true and neither -i, -n, nor -f given; refusing to clean
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git clean -n
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ git clean -n
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+$ cd ..
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git clean -n
+Would remove bad file
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git clean -n
+Would remove bad file.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ ^C
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ mkdir baddir
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ mv  bad\ file.txt baddir/
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git clean -n
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ ls
+baddir  'git tutorial'  src
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ ls -lrt
+total 0
+drwxr-xr-x 1 aksma 197610 0 Apr  1 18:09 src
+drwxr-xr-x 1 aksma 197610 0 Apr  1 19:29 'git tutorial'
+drwxr-xr-x 1 aksma 197610 0 Apr  1 22:08 baddir
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git clean -n
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git clean -d
+fatal: clean.requireForce defaults to true and neither -i, -n, nor -f given; refusing to clean
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git clean -d -n
+Would remove baddir/
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git clean -d -f
+Removing baddir/
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ cd ..
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ cd ..
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git
+$ cd algorithms/
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ ls
+Algorithms
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ ls -a
+.  ..  .git  Algorithms
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ vi .gitignore
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 13 commits.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Algorithms/git tutorial/command prompt.txt
+        modified:   Algorithms/git tutorial/file1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ vi .git
+.git/       .gitignore
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ vi .gitignore
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git add .gitignore
+warning: LF will be replaced by CRLF in .gitignore.
+The file will have its original line endings in your working directory.
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git commit -m "adding .gitignore at project level"
+[master 7623c0e] adding .gitignore at project level
+ Committer: Akshay Palshikar <Akshay Palshikar>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+)
+ create mode 100644 .gitignore
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git push
+Counting objects: 60, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (48/48), done.
+Writing objects: 100% (60/60), 7.63 KiB | 0 bytes/s, done.
+Total 60 (delta 28), reused 0 (delta 0)
+remote: Resolving deltas: 100% (28/28), completed with 1 local objects.
+To https://github.com/akshaypalshikar/algorithms.git
+   bdadebe..7623c0e  master -> master
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git add *.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   Algorithms/git tutorial/command prompt.txt
+        modified:   Algorithms/git tutorial/file1.txt
+
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git commit -m "adding git revert"
+[master 753ad25] adding git revert
+ Committer: Akshay Palshikar <Akshay Palshikar>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 1860 insertions(+), 3 deletions(-)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git push
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 7.55 KiB | 0 bytes/s, done.
+Total 6 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local objects.
+To https://github.com/akshaypalshikar/algorithms.git
+   7623c0e..753ad25  master -> master
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ ls
+Algorithms
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ pwd
+/c/Users/aksma/git/algorithms
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ ls -a
+.  ..  .git  .gitignore  Algorithms
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ cat .gitignore
+.project
+.settings/
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Algorithms/git tutorial/file1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git add *.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git commit -m "info about .gitignore added"
+[master ac6cf3c] info about .gitignore added
+ Committer: Akshay Palshikar <Akshay Palshikar>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 16 insertions(+)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git push
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 661 bytes | 0 bytes/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/akshaypalshikar/algorithms.git
+   753ad25..ac6cf3c  master -> master
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Algorithms/git tutorial/file1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git add *.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git commit -m "what kind of files should be ignored"
+[master 350f45f] what kind of files should be ignored
+ Committer: Akshay Palshikar <Akshay Palshikar>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git push
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 593 bytes | 0 bytes/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/akshaypalshikar/algorithms.git
+   ac6cf3c..350f45f  master -> master
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ pwd
+/c/Users/aksma/git/algorithms
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ cd
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~
+$ ls
+'$Recycle.Bin'
+AndroidStudioProjects
+AppData
+'Application Data'
+Contacts
+Cookies
+'Creative Cloud Files'
+Desktop
+Documents
+Downloads
+Favorites
+IntelGraphicsProfiles
+Links
+'Local Settings'
+Music
+'My Documents'
+NTUSER.DAT
+NTUSER.DAT{3613304e-bb5d-11e6-abdd-f4e30f125f14}.TxR.0.regtrans-ms
+NTUSER.DAT{3613304e-bb5d-11e6-abdd-f4e30f125f14}.TxR.1.regtrans-ms
+NTUSER.DAT{3613304e-bb5d-11e6-abdd-f4e30f125f14}.TxR.2.regtrans-ms
+NTUSER.DAT{3613304e-bb5d-11e6-abdd-f4e30f125f14}.TxR.blf
+NTUSER.DAT{3613304f-bb5d-11e6-abdd-f4e30f125f14}.TM.blf
+NTUSER.DAT{3613304f-bb5d-11e6-abdd-f4e30f125f14}.TMContainer00000000000000000001.regtrans-ms
+NTUSER.DAT{3613304f-bb5d-11e6-abdd-f4e30f125f14}.TMContainer00000000000000000002.regtrans-ms
+NetHood
+OneDrive
+Pictures
+PrintHood
+Recent
+Roaming
+'Saved Games'
+Searches
+SendTo
+'Start Menu'
+Templates
+Videos
+angular2
+angular2-essential-training
+dev
+git
+ntuser.dat.LOG1
+ntuser.dat.LOG2
+ntuser.ini
+workspace
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~
+$ ls -la
+total 9707
+drwxr-xr-x 1 aksma 197610       0 Apr  1 18:07 '$Recycle.Bin'
+drwxr-xr-x 1 aksma 197610       0 Apr  1 22:23 .
+drwxr-xr-x 1 aksma 197610       0 Jan 10 21:28 ..
+drwxr-xr-x 1 aksma 197610       0 Feb 13 01:41 .AndroidStudio2.2
+drwxr-xr-x 1 aksma 197610       0 Mar  3 21:05 .AndroidStudio2.3
+drwxr-xr-x 1 aksma 197610       0 Mar 21 21:08 .android
+drwxr-xr-x 1 aksma 197610       0 Mar  3 21:28 .atom
+drwxr-xr-x 1 aksma 197610       0 Jan 11 01:14 .config
+drwxr-xr-x 1 aksma 197610       0 Feb 13 01:16 .cordova
+drwxr-xr-x 1 aksma 197610       0 Feb 26 16:02 .eclipse
+-rw-r--r-- 1 aksma 197610      16 Feb 13 02:00 .emulator_console_auth_token
+drwxr-xr-x 1 aksma 197610       0 Feb  5 01:57 .gimp-2.8
+drwxr-xr-x 1 aksma 197610       0 Feb 13 01:41 .gradle
+drwxr-xr-x 1 aksma 197610       0 Feb 26 14:06 .m2
+-rw-r--r-- 1 aksma 197610      84 Mar  3 20:44 .node_repl_history
+drwxr-xr-x 1 aksma 197610       0 Mar 21 20:21 .p2
+drwxr-xr-x 1 aksma 197610       0 Jan 21 19:20 .thumbnails
+-rw-r--r-- 1 aksma 197610   12527 Apr  1 22:23 .viminfo
+drwxr-xr-x 1 aksma 197610       0 Jan 14 22:40 .vscode
+drwxr-xr-x 1 aksma 197610       0 Feb 13 01:55 AndroidStudioProjects
+drwxr-xr-x 1 aksma 197610       0 Jan 10 21:28 AppData
+lrwxrwxrwx 1 aksma 197610      30 Jan 10 21:28 'Application Data' -> /c/Users/aksma/AppData/Roaming
+drwxr-xr-x 1 aksma 197610       0 Mar 24 09:22 Contacts
+lrwxrwxrwx 1 aksma 197610      58 Jan 10 21:28 Cookies -> /c/Users/aksma/AppData/Local/Microsoft/Windows/INetCookies
+drwxr-xr-x 1 aksma 197610       0 Mar 30 23:39 'Creative Cloud Files'
+drwxr-xr-x 1 aksma 197610       0 Apr  1 15:34 Desktop
+drwxr-xr-x 1 aksma 197610       0 Mar 24 09:22 Documents
+drwxr-xr-x 1 aksma 197610       0 Mar 31 23:25 Downloads
+drwxr-xr-x 1 aksma 197610       0 Mar 24 09:22 Favorites
+drwxr-xr-x 1 aksma 197610       0 Mar 30 23:39 IntelGraphicsProfiles
+drwxr-xr-x 1 aksma 197610       0 Mar 24 09:22 Links
+lrwxrwxrwx 1 aksma 197610      28 Jan 10 21:28 'Local Settings' -> /c/Users/aksma/AppData/Local
+drwxr-xr-x 1 aksma 197610       0 Mar 24 09:22 Music
+lrwxrwxrwx 1 aksma 197610      24 Jan 10 21:28 'My Documents' -> /c/Users/aksma/Documents
+-rw-r--r-- 1 aksma 197610 2621440 Mar 30 01:01 NTUSER.DAT
+-rw-r--r-- 1 aksma 197610 1048576 Mar 30 23:39 NTUSER.DAT{3613304e-bb5d-11e6-abdd-f4e30f125f14}.TxR.0.regtrans-ms
+-rw-r--r-- 1 aksma 197610 1048576 Mar 30 23:39 NTUSER.DAT{3613304e-bb5d-11e6-abdd-f4e30f125f14}.TxR.1.regtrans-ms
+-rw-r--r-- 1 aksma 197610 1048576 Mar 30 23:39 NTUSER.DAT{3613304e-bb5d-11e6-abdd-f4e30f125f14}.TxR.2.regtrans-ms
+-rw-r--r-- 1 aksma 197610   65536 Mar 30 23:39 NTUSER.DAT{3613304e-bb5d-11e6-abdd-f4e30f125f14}.TxR.blf
+-rw-r--r-- 1 aksma 197610   65536 Mar 30 01:01 NTUSER.DAT{3613304f-bb5d-11e6-abdd-f4e30f125f14}.TM.blf
+-rw-r--r-- 1 aksma 197610  524288 Mar 30 01:01 NTUSER.DAT{3613304f-bb5d-11e6-abdd-f4e30f125f14}.TMContainer00000000000000000001.regtrans-ms
+-rw-r--r-- 1 aksma 197610  524288 Jan 11 01:31 NTUSER.DAT{3613304f-bb5d-11e6-abdd-f4e30f125f14}.TMContainer00000000000000000002.regtrans-ms
+lrwxrwxrwx 1 aksma 197610      66 Jan 10 21:28 NetHood -> '/c/Users/aksma/AppData/Roaming/Microsoft/Windows/Network Shortcuts'
+drwxr-xr-x 1 aksma 197610       0 Mar 30 23:39 OneDrive
+drwxr-xr-x 1 aksma 197610       0 Mar 24 09:22 Pictures
+lrwxrwxrwx 1 aksma 197610      66 Jan 10 21:28 PrintHood -> '/c/Users/aksma/AppData/Roaming/Microsoft/Windows/Printer Shortcuts'
+lrwxrwxrwx 1 aksma 197610      55 Jan 10 21:28 Recent -> /c/Users/aksma/AppData/Roaming/Microsoft/Windows/Recent
+drwxr-xr-x 1 aksma 197610       0 Dec  5 19:45 Roaming
+drwxr-xr-x 1 aksma 197610       0 Mar 24 09:22 'Saved Games'
+drwxr-xr-x 1 aksma 197610       0 Mar 24 09:22 Searches
+lrwxrwxrwx 1 aksma 197610      55 Jan 10 21:28 SendTo -> /c/Users/aksma/AppData/Roaming/Microsoft/Windows/SendTo
+lrwxrwxrwx 1 aksma 197610      59 Jan 10 21:28 'Start Menu' -> '/c/Users/aksma/AppData/Roaming/Microsoft/Windows/Start Menu'
+lrwxrwxrwx 1 aksma 197610      58 Jan 10 21:28 Templates -> /c/Users/aksma/AppData/Roaming/Microsoft/Windows/Templates
+drwxr-xr-x 1 aksma 197610       0 Apr  1 21:57 Videos
+drwxr-xr-x 1 aksma 197610       0 Jan 14 23:20 angular2
+drwxr-xr-x 1 aksma 197610       0 Feb  8 23:35 angular2-essential-training
+drwxr-xr-x 1 aksma 197610       0 Feb 26 14:20 dev
+drwxr-xr-x 1 aksma 197610       0 Apr  1 18:09 git
+-rw-r--r-- 1 aksma 197610  687104 Jan 10 21:28 ntuser.dat.LOG1
+-rw-r--r-- 1 aksma 197610  761856 Jan 10 21:28 ntuser.dat.LOG2
+-rw-r--r-- 1 aksma 197610      20 Jan 10 21:28 ntuser.ini
+drwxr-xr-x 1 aksma 197610       0 Mar  3 20:48 workspace
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~
+$ ls -lrta
+total 9707
+drwxr-xr-x 1 aksma 197610       0 Dec  5 19:45 Roaming
+drwxr-xr-x 1 aksma 197610       0 Jan 10 21:28 ..
+-rw-r--r-- 1 aksma 197610  761856 Jan 10 21:28 ntuser.dat.LOG2
+-rw-r--r-- 1 aksma 197610  687104 Jan 10 21:28 ntuser.dat.LOG1
+lrwxrwxrwx 1 aksma 197610      24 Jan 10 21:28 'My Documents' -> /c/Users/aksma/Documents
+lrwxrwxrwx 1 aksma 197610      30 Jan 10 21:28 'Application Data' -> /c/Users/aksma/AppData/Roaming
+lrwxrwxrwx 1 aksma 197610      66 Jan 10 21:28 NetHood -> '/c/Users/aksma/AppData/Roaming/Microsoft/Windows/Network Shortcuts'
+lrwxrwxrwx 1 aksma 197610      66 Jan 10 21:28 PrintHood -> '/c/Users/aksma/AppData/Roaming/Microsoft/Windows/Printer Shortcuts'
+lrwxrwxrwx 1 aksma 197610      55 Jan 10 21:28 Recent -> /c/Users/aksma/AppData/Roaming/Microsoft/Windows/Recent
+lrwxrwxrwx 1 aksma 197610      55 Jan 10 21:28 SendTo -> /c/Users/aksma/AppData/Roaming/Microsoft/Windows/SendTo
+lrwxrwxrwx 1 aksma 197610      59 Jan 10 21:28 'Start Menu' -> '/c/Users/aksma/AppData/Roaming/Microsoft/Windows/Start Menu'
+lrwxrwxrwx 1 aksma 197610      58 Jan 10 21:28 Templates -> /c/Users/aksma/AppData/Roaming/Microsoft/Windows/Templates
+lrwxrwxrwx 1 aksma 197610      28 Jan 10 21:28 'Local Settings' -> /c/Users/aksma/AppData/Local
+lrwxrwxrwx 1 aksma 197610      58 Jan 10 21:28 Cookies -> /c/Users/aksma/AppData/Local/Microsoft/Windows/INetCookies
+drwxr-xr-x 1 aksma 197610       0 Jan 10 21:28 AppData
+-rw-r--r-- 1 aksma 197610      20 Jan 10 21:28 ntuser.ini
+drwxr-xr-x 1 aksma 197610       0 Jan 11 01:14 .config
+-rw-r--r-- 1 aksma 197610  524288 Jan 11 01:31 NTUSER.DAT{3613304f-bb5d-11e6-abdd-f4e30f125f14}.TMContainer00000000000000000002.regtrans-ms
+drwxr-xr-x 1 aksma 197610       0 Jan 14 22:40 .vscode
+drwxr-xr-x 1 aksma 197610       0 Jan 14 23:20 angular2
+drwxr-xr-x 1 aksma 197610       0 Jan 21 19:20 .thumbnails
+drwxr-xr-x 1 aksma 197610       0 Feb  5 01:57 .gimp-2.8
+drwxr-xr-x 1 aksma 197610       0 Feb  8 23:35 angular2-essential-training
+drwxr-xr-x 1 aksma 197610       0 Feb 13 01:16 .cordova
+drwxr-xr-x 1 aksma 197610       0 Feb 13 01:41 .AndroidStudio2.2
+drwxr-xr-x 1 aksma 197610       0 Feb 13 01:41 .gradle
+drwxr-xr-x 1 aksma 197610       0 Feb 13 01:55 AndroidStudioProjects
+-rw-r--r-- 1 aksma 197610      16 Feb 13 02:00 .emulator_console_auth_token
+drwxr-xr-x 1 aksma 197610       0 Feb 26 14:06 .m2
+drwxr-xr-x 1 aksma 197610       0 Feb 26 14:20 dev
+drwxr-xr-x 1 aksma 197610       0 Feb 26 16:02 .eclipse
+-rw-r--r-- 1 aksma 197610      84 Mar  3 20:44 .node_repl_history
+drwxr-xr-x 1 aksma 197610       0 Mar  3 20:48 workspace
+drwxr-xr-x 1 aksma 197610       0 Mar  3 21:05 .AndroidStudio2.3
+drwxr-xr-x 1 aksma 197610       0 Mar  3 21:28 .atom
+drwxr-xr-x 1 aksma 197610       0 Mar 21 20:21 .p2
+drwxr-xr-x 1 aksma 197610       0 Mar 21 21:08 .android
+drwxr-xr-x 1 aksma 197610       0 Mar 24 09:22 Contacts
+drwxr-xr-x 1 aksma 197610       0 Mar 24 09:22 Pictures
+drwxr-xr-x 1 aksma 197610       0 Mar 24 09:22 Favorites
+drwxr-xr-x 1 aksma 197610       0 Mar 24 09:22 Searches
+drwxr-xr-x 1 aksma 197610       0 Mar 24 09:22 Music
+drwxr-xr-x 1 aksma 197610       0 Mar 24 09:22 Documents
+drwxr-xr-x 1 aksma 197610       0 Mar 24 09:22 'Saved Games'
+drwxr-xr-x 1 aksma 197610       0 Mar 24 09:22 Links
+-rw-r--r-- 1 aksma 197610  524288 Mar 30 01:01 NTUSER.DAT{3613304f-bb5d-11e6-abdd-f4e30f125f14}.TMContainer00000000000000000001.regtrans-ms
+-rw-r--r-- 1 aksma 197610   65536 Mar 30 01:01 NTUSER.DAT{3613304f-bb5d-11e6-abdd-f4e30f125f14}.TM.blf
+-rw-r--r-- 1 aksma 197610 2621440 Mar 30 01:01 NTUSER.DAT
+-rw-r--r-- 1 aksma 197610   65536 Mar 30 23:39 NTUSER.DAT{3613304e-bb5d-11e6-abdd-f4e30f125f14}.TxR.blf
+-rw-r--r-- 1 aksma 197610 1048576 Mar 30 23:39 NTUSER.DAT{3613304e-bb5d-11e6-abdd-f4e30f125f14}.TxR.0.regtrans-ms
+-rw-r--r-- 1 aksma 197610 1048576 Mar 30 23:39 NTUSER.DAT{3613304e-bb5d-11e6-abdd-f4e30f125f14}.TxR.1.regtrans-ms
+-rw-r--r-- 1 aksma 197610 1048576 Mar 30 23:39 NTUSER.DAT{3613304e-bb5d-11e6-abdd-f4e30f125f14}.TxR.2.regtrans-ms
+drwxr-xr-x 1 aksma 197610       0 Mar 30 23:39 IntelGraphicsProfiles
+drwxr-xr-x 1 aksma 197610       0 Mar 30 23:39 OneDrive
+drwxr-xr-x 1 aksma 197610       0 Mar 30 23:39 'Creative Cloud Files'
+drwxr-xr-x 1 aksma 197610       0 Mar 31 23:25 Downloads
+drwxr-xr-x 1 aksma 197610       0 Apr  1 15:34 Desktop
+drwxr-xr-x 1 aksma 197610       0 Apr  1 18:07 '$Recycle.Bin'
+drwxr-xr-x 1 aksma 197610       0 Apr  1 18:09 git
+drwxr-xr-x 1 aksma 197610       0 Apr  1 21:57 Videos
+-rw-r--r-- 1 aksma 197610   12527 Apr  1 22:23 .viminfo
+drwxr-xr-x 1 aksma 197610       0 Apr  1 22:23 .
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~
+$ ls -lrta | grep .git
+drwxr-xr-x 1 aksma 197610       0 Apr  1 18:09 git
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~
+$ vi .gitignore_global
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~
+$ vi .gitignore_global
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~
+$ git config --global core.excludesfile .gitignore_global
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~
+$ cat .gitconfig
+[core]
+        excludesfile = .gitignore_global
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~
+$ pwd
+/c/Users/aksma
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~
+$ git config --global core.excludesfile /c/Users/aksma/gitignore_global
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~
+$ cat .gitconfig
+[core]
+        excludesfile = C:/Users/aksma/gitignore_global
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~
+$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~
+$ pwd
+/c/Users/aksma
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~
+$ cd git/
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git
+$ ls
+algorithms  hello  spring4-mvc-gradle-xml-hello-world
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git
+$ cd algorithms/
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Algorithms/git tutorial/file1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git add Algorithms/git\ tutorial/
+command prompt.txt  file1.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git add Algorithms/git\ tutorial/file1.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git commit -m "untrack already committed files"
+[master b09bdeb] untrack already committed files
+ Committer: Akshay Palshikar <Akshay Palshikar>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 9 insertions(+)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git push
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 592 bytes | 0 bytes/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/akshaypalshikar/algorithms.git
+   350f45f..b09bdeb  master -> master
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git add Algorithms/git\ tutorial/file1.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git commit -m "git ignores empty directories"
+[master cee6dbf] git ignores empty directories
+ Committer: Akshay Palshikar <Akshay Palshikar>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git add Algorithms/git\ tutorial/file1.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git commit -m ".gitkeep convention"
+[master 27c193d] .gitkeep convention
+ Committer: Akshay Palshikar <Akshay Palshikar>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 4 insertions(+)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ bash
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git push
+Counting objects: 10, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 1013 bytes | 0 bytes/s, done.
+Total 10 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To https://github.com/akshaypalshikar/algorithms.git
+   b09bdeb..27c193d  master -> master
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git ls-tree HEAD
+100644 blob 43737c672e6ee2a79b24a1af2f2a316797d0f028    .gitignore
+040000 tree 39b9ad9e7ef6c60816dbd2dc7c1bf37223cb8a39    Algorithms
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ cd Algorithms/
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git ls-tree HEAD
+100644 blob 63b7e892d1ebf1eeb9df3d8d71e5bedb134487c1    .classpath
+100644 blob ae3c1726048cd06b9a143e0376ed46dd9b9a8d53    .gitignore
+100644 blob 2580803efaeec92173e6b065da33e1cb001ad045    .project
+040000 tree b596484c6219e53e71025600c936f0990322c9ac    .settings
+040000 tree 9585e7cc2c7ebf2f776d4113751e1ec0c4159455    git tutorial
+040000 tree a7557514c0d661b11b4d7702ec32e488fb36abd4    src
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git ls-tree master
+100644 blob 63b7e892d1ebf1eeb9df3d8d71e5bedb134487c1    .classpath
+100644 blob ae3c1726048cd06b9a143e0376ed46dd9b9a8d53    .gitignore
+100644 blob 2580803efaeec92173e6b065da33e1cb001ad045    .project
+040000 tree b596484c6219e53e71025600c936f0990322c9ac    .settings
+040000 tree 9585e7cc2c7ebf2f776d4113751e1ec0c4159455    git tutorial
+040000 tree a7557514c0d661b11b4d7702ec32e488fb36abd4    src
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git ls-tree master git\ tutorial/
+100644 blob 0d08ac4da73a0cbabf52a7bf668d52edf8964817    git tutorial/command prompt.txt
+100644 blob 3986224e853fe66655e53b213c8ad0818bbcf9f1    git tutorial/file1.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git ls-tree master^ git\ tutorial/
+100644 blob 0d08ac4da73a0cbabf52a7bf668d52edf8964817    git tutorial/command prompt.txt
+100644 blob 812491f180812f7694af3e9b9150706d00562072    git tutorial/file1.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git ls-tree master~ git\ tutorial/
+100644 blob 0d08ac4da73a0cbabf52a7bf668d52edf8964817    git tutorial/command prompt.txt
+100644 blob 812491f180812f7694af3e9b9150706d00562072    git tutorial/file1.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git ls-tree master~2 git\ tutorial/
+100644 blob 0d08ac4da73a0cbabf52a7bf668d52edf8964817    git tutorial/command prompt.txt
+100644 blob 80d27994280004a7c49efd8ac4699cb2834d6ab1    git tutorial/file1.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git ls-tree 9585e7cc2c7ebf2f776d4113751e1ec0c4159455
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ cd ..
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git ls-tree 9585e7cc2c7ebf2f776d4113751e1ec0c4159455
+100644 blob 0d08ac4da73a0cbabf52a7bf668d52edf8964817    command prompt.txt
+100644 blob 3986224e853fe66655e53b213c8ad0818bbcf9f1    file1.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git add *.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git commit -m "ls-tree tree-ish traverse tree"
+[master 01ca377] ls-tree tree-ish traverse tree
+ Committer: Akshay Palshikar <Akshay Palshikar>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 2481 insertions(+)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git log
+commit 01ca37799a1842ef9a00bd2cbd26794ab556d2b3
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sun Apr 2 00:19:01 2017 -0700
+
+    ls-tree tree-ish traverse tree
+
+commit 27c193d0779452e253f8092796b65754ed743e81
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sun Apr 2 00:07:44 2017 -0700
+
+    .gitkeep convention
+
+commit cee6dbfea18d1b4c1343d32429392aaa2bf3f5fd
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sun Apr 2 00:05:29 2017 -0700
+
+    git ignores empty directories
+
+commit b09bdeb4466f1007e53f8a8c60aabed89cd9bdca
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sun Apr 2 00:04:22 2017 -0700
+
+    untrack already committed files
+
+commit 350f45f6c5313476ce8a812c080aab32269d1c85
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 22:44:41 2017 -0700
+
+    what kind of files should be ignored
+
+commit ac6cf3c16d93782a4dc9bfb127384cae822f62cf
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 22:27:55 2017 -0700
+
+    info about .gitignore added
+
+commit 753ad255565d067c4d88d58880d7f7851a88ad0f
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 22:25:18 2017 -0700
+
+    adding git revert
+
+commit 7623c0eba6b53d99399b6516260c6c12de1d5fcf
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 22:24:25 2017 -0700
+
+    adding .gitignore at project level
+
+commit 588a57e1ccd92cdede363b3bdce42c7ab81dff88
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:37:30 2017 -0700
+
+    garbage 2
+
+commit 270d3d6c0a910e480c5ebec94036d9670b21acba
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:36:53 2017 -0700
+
+    garbage 1
+
+commit cfb3d08d868df226e193d57bf26b24023fb3a04d
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:36:31 2017 -0700
+
+    removed garbage
+
+commit 9c0eef14148051a1ec7119f7fe300bb0b486fc7c
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:35:02 2017 -0700
+
+    adding more garbage
+
+commit 3d057e15a2f89effbd4ba367589cac4a9d3f0add
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:30:08 2017 -0700
+
+    renamed the file
+
+commit ff3dd440f7876bdb569c3f3e1add1b2493293ac0
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:23:59 2017 -0700
+
+    added git commands that are run till now
+
+commit 2c239706751a6eeef5e2ee0e13437e03b0b26926
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:22:45 2017 -0700
+
+    Revert "adding garbage text to revert"
+
+    This reverts commit 4d98aeea7309d2fce2d341ba42493b6f7605b672.
+
+commit 4d98aeea7309d2fce2d341ba42493b6f7605b672
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:22:04 2017 -0700
+
+    adding garbage text to revert
+
+commit f49918a9562affeb2fffac250886aabf60009b06
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:21:27 2017 -0700
+
+    before starting git revert
+
+commit 0ae0e0f8167da60db3b280ec8da3d975b142cc85
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 19:17:12 2017 -0700
+
+    committing file from old version again
+
+commit ca9b9fb69bf6ac8a89e79a17c0c596c7d91e9d27
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:59:28 2017 -0700
+
+    how to checkout spefici version from repo
+
+commit b99df6e0bbed7d3c91e4ff35c85bc60433cd548f
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:54:51 2017 -0700
+
+    adding garbage to rollback
+
+commit 95fbb16b2c971d40b8f636ff9db17113adb3e35f
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:48:53 2017 -0700
+
+    adding all the commands used in the commit
+
+commit bdadebe17c53a73bb16c45208a047ef0951479cd
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:43:20 2017 -0700
+
+    git commit amed example
+
+commit f86107fe1d03de6ee6f0a978a5e7c9a87e8dccda
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:37:12 2017 -0700
+
+    how to undo the changes in staging area?
+
+commit a5318c696d4edb8932a89812708a390a9e548827
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:28:43 2017 -0700
+
+    added about how to undo changes in working directory
+
+commit da11818c971324f430b206e1e064158385be73d7
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:21:25 2017 -0700
+
+    file rename example
+
+commit 7a7982addbfc6a2f4cc25e34bf58fbb583ebfa18
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sat Apr 1 18:19:37 2017 -0700
+
+    added git tutorial file
+
+commit b8924befdf6d5717e35d1918b503294432e0b7d3
+Author: Akshay <aksmakesit@gmail.com>
+Date:   Sat Aug 20 18:24:35 2016 -0400
+
+    Fibonacci series
+
+commit b2a3eb4c951e82ac6c110d3482c939b70cad5171
+Author: Akshay <aksmakesit@gmail.com>
+Date:   Sat Aug 20 17:04:10 2016 -0400
+
+    Initial Commit
+
+commit 787bc81595c7015be25355238084fb28d4691ec5
+Author: Akshay <aksmakesit@gmail.com>
+Date:   Sat Aug 20 16:48:19 2016 -0400
+
+    Initial Commit
+(END)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git log --oneline
+01ca377 ls-tree tree-ish traverse tree
+27c193d .gitkeep convention
+cee6dbf git ignores empty directories
+b09bdeb untrack already committed files
+350f45f what kind of files should be ignored
+ac6cf3c info about .gitignore added
+753ad25 adding git revert
+7623c0e adding .gitignore at project level
+588a57e garbage 2
+270d3d6 garbage 1
+cfb3d08 removed garbage
+9c0eef1 adding more garbage
+3d057e1 renamed the file
+ff3dd44 added git commands that are run till now
+2c23970 Revert "adding garbage text to revert"
+4d98aee adding garbage text to revert
+f49918a before starting git revert
+0ae0e0f committing file from old version again
+ca9b9fb how to checkout spefici version from repo
+b99df6e adding garbage to rollback
+95fbb16 adding all the commands used in the commit
+bdadebe git commit amed example
+f86107f how to undo the changes in staging area?
+a5318c6 added about how to undo changes in working directory
+da11818 file rename example
+7a7982a added git tutorial file
+b8924be Fibonacci series
+b2a3eb4 Initial Commit
+787bc81 Initial Commit
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git show b09bdeb
+commit b09bdeb4466f1007e53f8a8c60aabed89cd9bdca
+Author: Akshay Palshikar <Akshay Palshikar>
+Date:   Sun Apr 2 00:04:22 2017 -0700
+
+    untrack already committed files
+
+diff --git a/Algorithms/git tutorial/file1.txt b/Algorithms/git tutorial/file1.txt
+index 7b80efe..80d2799 100644
+--- a/Algorithms/git tutorial/file1.txt
++++ b/Algorithms/git tutorial/file1.txt
+@@ -238,3 +238,12 @@ Note :  Please commit gitignore file in project root so that everyone using this
+
+ what did if code should be added in .gitignore?
+ 1. compiled shource code. e.g. like .class files in java and target/ directory when using maven.
++
++
++how to add git ignore globally?
++
++git config --global core.excludesfile ~/.gitignore_global
++
++
++how to keep tracking already committed file?
++git rm --cached <filename>
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git show --format=oneline HEAD
+01ca37799a1842ef9a00bd2cbd26794ab556d2b3 ls-tree tree-ish traverse tree
+diff --git a/Algorithms/git tutorial/command prompt.txt b/Algorithms/git tutorial/command prompt.txt
+index 0d08ac4..098cc20 100644
+--- a/Algorithms/git tutorial/command prompt.txt
++++ b/Algorithms/git tutorial/command prompt.txt
+@@ -2819,3 +2819,2420 @@ $ git reset ^C
+
+ aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+ $
++
++
++$ git push
++Counting objects: 5, done.
++Delta compression using up to 4 threads.
++Compressing objects: 100% (3/3), done.
++Writing objects: 100% (5/5), 479 bytes | 0 bytes/s, done.
++Total 5 (delta 1), reused 0 (delta 0)
++remote: Resolving deltas: 100% (1/1), completed with 1 local objects.
++To https://github.com/akshaypalshikar/algorithms.git
++   b8924be..7a7982a  master -> master
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git mv git\ tutorial/file1.txt git\ tutorial/file-renamed.txt
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git status
++On branch master
++Your branch is up-to-date with 'origin/master'.
++Changes to be committed:
++  (use "git reset HEAD <file>..." to unstage)
++
++        renamed:    git tutorial/file1.txt -> git tutorial/file-renamed.txt
++
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git commit -m "file rename example"
++[master da11818] file rename example
++ Committer: Akshay Palshikar <Akshay Palshikar>
++Your name and email address were configured automatically based
++on your username and hostname. Please check that they are accurate.
++You can suppress this message by setting them explicitly. Run the
++following command and follow the instructions in your editor to edit
++your configuration file:
++
++    git config --global --edit
++
++After doing this, you may fix the identity used for this commit with:
++
++    git commit --amend --reset-author
++
++ 1 file changed, 0 insertions(+), 0 deletions(-)
++ rename Algorithms/git tutorial/{file1.txt => file-renamed.txt} (100%)
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ whoami
++aksma
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git push
++Counting objects: 4, done.
++Delta compression using up to 4 threads.
++Compressing objects: 100% (2/2), done.
++Writing objects: 100% (4/4), 348 bytes | 0 bytes/s, done.
++Total 4 (delta 1), reused 0 (delta 0)
++remote: Resolving deltas: 100% (1/1), completed with 1 local objects.
++To https://github.com/akshaypalshikar/algorithms.git
++   7a7982a..da11818  master -> master
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ celar
++bash: celar: command not found
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ clear
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ whoami
++aksma
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git status
++On branch master
++Your branch is up-to-date with 'origin/master'.
++Changes not staged for commit:
++  (use "git add <file>..." to update what will be committed)
++  (use "git checkout -- <file>..." to discard changes in working directory)
++
++        modified:   git tutorial/file-renamed.txt
++
++no changes added to commit (use "git add" and/or "git commit -a")
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git add git\ tutorial/file-renamed.txt
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git commit -m "added about how to undo changes in working directory"
++[master a5318c6] added about how to undo changes in working directory
++ Committer: Akshay Palshikar <Akshay Palshikar>
++Your name and email address were configured automatically based
++on your username and hostname. Please check that they are accurate.
++You can suppress this message by setting them explicitly. Run the
++following command and follow the instructions in your editor to edit
++your configuration file:
++
++    git config --global --edit
++
++After doing this, you may fix the identity used for this commit with:
++
++    git commit --amend --reset-author
++
++ 1 file changed, 2 insertions(+)
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git statua
++git: 'statua' is not a git command. See 'git --help'.
++
++Did you mean this?
++        status
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ status
++bash: status: command not found
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git status
++On branch master
++Your branch is ahead of 'origin/master' by 1 commit.
++  (use "git push" to publish your local commits)
++Changes not staged for commit:
++  (use "git add <file>..." to update what will be committed)
++  (use "git checkout -- <file>..." to discard changes in working directory)
++
++        modified:   git tutorial/file-renamed.txt
++
++no changes added to commit (use "git add" and/or "git commit -a")
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git checkout -- git\ tutorial/file-renamed.txt
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ ^C
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git ststus
++git: 'ststus' is not a git command. See 'git --help'.
++
++Did you mean this?
++        status
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git statis
++git: 'statis' is not a git command. See 'git --help'.
++
++Did you mean this?
++        status
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git status
++On branch master
++Your branch is ahead of 'origin/master' by 1 commit.
++  (use "git push" to publish your local commits)
++Changes not staged for commit:
++  (use "git add <file>..." to update what will be committed)
++  (use "git checkout -- <file>..." to discard changes in working directory)
++
++        modified:   git tutorial/file-renamed.txt
++
++Untracked files:
++  (use "git add <file>..." to include in what will be committed)
++
++        unwanted file.txt
++
++no changes added to commit (use "git add" and/or "git commit -a")
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git add unwanted\ file.txt
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git status
++On branch master
++Your branch is ahead of 'origin/master' by 1 commit.
++  (use "git push" to publish your local commits)
++Changes to be committed:
++  (use "git reset HEAD <file>..." to unstage)
++
++        new file:   unwanted file.txt
++
++Changes not staged for commit:
++  (use "git add <file>..." to update what will be committed)
++  (use "git checkout -- <file>..." to discard changes in working directory)
++
++        modified:   git tutorial/file-renamed.txt
++
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git reset HEAD unwanted\ file.txt
++Unstaged changes after reset:
++M       Algorithms/git tutorial/file-renamed.txt
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git status
++On branch master
++Your branch is ahead of 'origin/master' by 1 commit.
++  (use "git push" to publish your local commits)
++Changes not staged for commit:
++  (use "git add <file>..." to update what will be committed)
++  (use "git checkout -- <file>..." to discard changes in working directory)
++
++        modified:   git tutorial/file-renamed.txt
++
++Untracked files:
++  (use "git add <file>..." to include in what will be committed)
++
++        unwanted file.txt
++
++no changes added to commit (use "git add" and/or "git commit -a")
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ rm unwanted\ file.txt
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ ^C
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git add git\ tutorial/file-renamed.txt
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git commit
++Aborting commit due to empty commit message.
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git commit -m "how to undo the changes in staging area?"
++[master f86107f] how to undo the changes in staging area?
++ Committer: Akshay Palshikar <Akshay Palshikar>
++Your name and email address were configured automatically based
++on your username and hostname. Please check that they are accurate.
++You can suppress this message by setting them explicitly. Run the
++following command and follow the instructions in your editor to edit
++your configuration file:
++
++    git config --global --edit
++
++After doing this, you may fix the identity used for this commit with:
++
++    git commit --amend --reset-author
++
++ 1 file changed, 5 insertions(+)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git show --format=oneline HEAD~3
+b09bdeb4466f1007e53f8a8c60aabed89cd9bdca untrack already committed files
+diff --git a/Algorithms/git tutorial/file1.txt b/Algorithms/git tutorial/file1.txt
+index 7b80efe..80d2799 100644
+--- a/Algorithms/git tutorial/file1.txt
++++ b/Algorithms/git tutorial/file1.txt
+@@ -238,3 +238,12 @@ Note :  Please commit gitignore file in project root so that everyone using this
+
+ what did if code should be added in .gitignore?
+ 1. compiled shource code. e.g. like .class files in java and target/ directory when using maven.
++
++
++how to add git ignore globally?
++
++git config --global core.excludesfile ~/.gitignore_global
++
++
++how to keep tracking already committed file?
++git rm --cached <filename>
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$
