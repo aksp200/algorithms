@@ -87,3 +87,4 @@ Using rest to undo many commits
 git reset
 
 g1
+g2
