@@ -219,3 +219,19 @@ git revert 588a57e1ccd92cdede363b3bdce42c7ab81dff88
 git ignore
 
 .gitignore in root of project
+e.g.
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ pwd
+/c/Users/aksma/git/algorithms
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ ls -a
+.  ..  .git  .gitignore  Algorithms
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ cat .gitignore
+.project
+.settings/
+
+
+Note :  Please commit gitignore file in project root so that everyone using this project will be able to ignore the same kind of files 
