@@ -1,0 +1,5 @@
+how to add a project in git?
+to check if directory is a got repo type :
+git status
+to initialize a repo :
+git init
