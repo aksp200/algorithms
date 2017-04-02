@@ -63,3 +63,5 @@ After doing this, you may fix the identity used for this commit with:
  1 file changed, 18 insertions(+), 1 deletion(-)
 
 aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+
+how to use git revert?
