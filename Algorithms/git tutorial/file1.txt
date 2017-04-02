@@ -596,6 +596,7 @@ aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
 
 How to create a branch?
 
+<<<<<<< HEAD
 588a57e garbage 2
 270d3d6 garbage 1
 cfb3d08 removed garbage
@@ -1847,6 +1848,8 @@ aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
 $
 
 
+=======
+>>>>>>> create_branch_and_switch_same_time
 #check branches (* - current branch)
 $ git branch
 * master
@@ -1908,6 +1911,7 @@ aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (new_feature)
 $ git branch
   master
 * new_feature
+<<<<<<< HEAD
 
 create and switch branches at the same time.
 588a57e garbage 2
@@ -3217,3 +3221,5 @@ Akshay$ export PS1='\[\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\007\]\n\[\033[3
 
 aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
 $
+=======
+>>>>>>> create_branch_and_switch_same_time

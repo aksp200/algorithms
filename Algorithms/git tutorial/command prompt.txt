@@ -8190,6 +8190,7 @@ aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
 $
 
 
+<<<<<<< HEAD
 aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
 $ git checkout new_feature
 M       Algorithms/git tutorial/command prompt.txt
@@ -8200,6 +8201,192 @@ Your branch is up-to-date with 'origin/new_feature'.
 aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (new_feature)
 $ git log --oneline
 cbfe9b3 adding a file in branch
+=======
++
++Untracked files:
++  (use "git add <file>..." to include in what will be committed)
++
++        unwanted file.txt
++
++no changes added to commit (use "git add" and/or "git commit -a")
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ rm unwanted\ file.txt
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ ^C
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git add git\ tutorial/file-renamed.txt
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git commit
++Aborting commit due to empty commit message.
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git commit -m "how to undo the changes in staging area?"
++[master f86107f] how to undo the changes in staging area?
++ Committer: Akshay Palshikar <Akshay Palshikar>
++Your name and email address were configured automatically based
++on your username and hostname. Please check that they are accurate.
++You can suppress this message by setting them explicitly. Run the
++following command and follow the instructions in your editor to edit
++your configuration file:
++
++    git config --global --edit
++
++After doing this, you may fix the identity used for this commit with:
++
++    git commit --amend --reset-author
++
++ 1 file changed, 5 insertions(+)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git show --format=oneline HEAD~3
+b09bdeb4466f1007e53f8a8c60aabed89cd9bdca untrack already committed files
+diff --git a/Algorithms/git tutorial/file1.txt b/Algorithms/git tutorial/file1.txt
+index 7b80efe..80d2799 100644
+--- a/Algorithms/git tutorial/file1.txt
++++ b/Algorithms/git tutorial/file1.txt
+@@ -238,3 +238,12 @@ Note :  Please commit gitignore file in project root so that everyone using this
+
+ what did if code should be added in .gitignore?
+ 1. compiled shource code. e.g. like .class files in java and target/ directory when using maven.
++
++
++how to add git ignore globally?
++
++git config --global core.excludesfile ~/.gitignore_global
++
++
++how to keep tracking already committed file?
++git rm --cached <filename>
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ clear
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git diff
+diff --git a/Algorithms/git tutorial/command prompt.txt b/Algorithms/git tutorial/command prompt.txt
+index 098cc20..7563b85 100644
+--- a/Algorithms/git tutorial/command prompt.txt
++++ b/Algorithms/git tutorial/command prompt.txt
+@@ -5236,3 +5236,2955 @@ $
+
+ aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+ $
++
++
++
++$ git push
++Counting objects: 5, done.
++Delta compression using up to 4 threads.
++Compressing objects: 100% (3/3), done.
++Writing objects: 100% (5/5), 479 bytes | 0 bytes/s, done.
++Total 5 (delta 1), reused 0 (delta 0)
++remote: Resolving deltas: 100% (1/1), completed with 1 local objects.
++To https://github.com/akshaypalshikar/algorithms.git
++   b8924be..7a7982a  master -> master
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git mv git\ tutorial/file1.txt git\ tutorial/file-renamed.txt
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git status
++On branch master
++Your branch is up-to-date with 'origin/master'.
++Changes to be committed:
++  (use "git reset HEAD <file>..." to unstage)
++
++        renamed:    git tutorial/file1.txt -> git tutorial/file-renamed.txt
++
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git commit -m "file rename example"
++[master da11818] file rename example
++ Committer: Akshay Palshikar <Akshay Palshikar>
++Your name and email address were configured automatically based
++on your username and hostname. Please check that they are accurate.
++You can suppress this message by setting them explicitly. Run the
++following command and follow the instructions in your editor to edit
++your configuration file:
++
++    git config --global --edit
++
++After doing this, you may fix the identity used for this commit with:
++
++    git commit --amend --reset-author
++
++ 1 file changed, 0 insertions(+), 0 deletions(-)
++ rename Algorithms/git tutorial/{file1.txt => file-renamed.txt} (100%)
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ whoami
++aksma
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git push
++Counting objects: 4, done.
++Delta compression using up to 4 threads.
++Compressing objects: 100% (2/2), done.
++Writing objects: 100% (4/4), 348 bytes | 0 bytes/s, done.
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git diff --cached
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git add *.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git stastus
+git: 'stastus' is not a git command. See 'git --help'.
+
+Did you mean this?
+        status
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   Algorithms/git tutorial/command prompt.txt
+        modified:   Algorithms/git tutorial/file1.txt
+
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git commit -m "git logs"
+[master fa1ed01] git logs
+ Committer: Akshay Palshikar <Akshay Palshikar>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 3226 insertions(+)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git push
+Counting objects: 12, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 25.94 KiB | 0 bytes/s, done.
+Total 12 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), completed with 1 local objects.
+To https://github.com/akshaypalshikar/algorithms.git
+   27c193d..fa1ed01  master -> master
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git log --oneline
+>>>>>>> create_branch_and_switch_same_time
 fa1ed01 git logs
 01ca377 ls-tree tree-ish traverse tree
 27c193d .gitkeep convention
@@ -8231,6 +8418,7 @@ b8924be Fibonacci series
 b2a3eb4 Initial Commit
 787bc81 Initial Commit
 
+<<<<<<< HEAD
 aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (new_feature)
 $ git checkout
 HEAD                 master               origin/HEAD          origin/new_feature
@@ -8257,6 +8445,76 @@ $ clear
 aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (new_feature)
 $ git log --oneline
 cbfe9b3 adding a file in branch
+=======
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git diff 270d3d6
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..43737c6
+--- /dev/null
++++ b/.gitignore
+@@ -0,0 +1,2 @@
++.project
++.settings/
+diff --git a/Algorithms/git tutorial/command prompt.txt b/Algorithms/git tutorial/command prompt.txt
+index 0a6a049..7563b85 100644
+--- a/Algorithms/git tutorial/command prompt.txt
++++ b/Algorithms/git tutorial/command prompt.txt
+@@ -1093,3 +1093,7098 @@ Date:   Sat Aug 20 16:48:19 2016 -0400
+
+ aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms/git tutorial (master)
+ $
++
++
++$ git push
++Counting objects: 5, done.
++Delta compression using up to 4 threads.
++Compressing objects: 100% (3/3), done.
++Writing objects: 100% (5/5), 479 bytes | 0 bytes/s, done.
++Total 5 (delta 1), reused 0 (delta 0)
++remote: Resolving deltas: 100% (1/1), completed with 1 local objects.
++To https://github.com/akshaypalshikar/algorithms.git
++   b8924be..7a7982a  master -> master
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git mv git\ tutorial/file1.txt git\ tutorial/file-renamed.txt
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git status
++On branch master
++Your branch is up-to-date with 'origin/master'.
++Changes to be committed:
++  (use "git reset HEAD <file>..." to unstage)
++
++        renamed:    git tutorial/file1.txt -> git tutorial/file-renamed.txt
++
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ git commit -m "file rename example"
++[master da11818] file rename example
++ Committer: Akshay Palshikar <Akshay Palshikar>
++Your name and email address were configured automatically based
++on your username and hostname. Please check that they are accurate.
++You can suppress this message by setting them explicitly. Run the
++following command and follow the instructions in your editor to edit
++your configuration file:
++
++    git config --global --edit
++
++After doing this, you may fix the identity used for this commit with:
++
++    git commit --amend --reset-author
++
++ 1 file changed, 0 insertions(+), 0 deletions(-)
++ rename Algorithms/git tutorial/{file1.txt => file-renamed.txt} (100%)
++
++aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
++$ whoami
++aksma
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git log --oneline
+>>>>>>> create_branch_and_switch_same_time
 fa1ed01 git logs
 01ca377 ls-tree tree-ish traverse tree
 27c193d .gitkeep convention
@@ -8288,6 +8546,7 @@ b8924be Fibonacci series
 b2a3eb4 Initial Commit
 787bc81 Initial Commit
 
+<<<<<<< HEAD
 aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (new_feature)
 $ git checkout -b create_branch_and_switch_same_time
 M       Algorithms/git tutorial/command prompt.txt
@@ -8380,6 +8639,174 @@ $ git add git\ tutorial/command\ prompt.txt  git\ tutorial/file1.txt
 aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (create_branch_and_switch_same_time)
 $ git commit -m "in create short branch "
 [create_branch_and_switch_same_time 7ef6baa] in create short branch
+=======
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git diff --stat -- summary cee6dbf..HEAD
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git diff --stat --summary cee6dbf..HEAD
+ Algorithms/git tutorial/command prompt.txt | 5369 ++++++++++++++++++++++++++++
+ Algorithms/git tutorial/file1.txt          |  342 ++
+ 2 files changed, 5711 insertions(+)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git diff --stat --ignore-all-spaces cee6dbf..HEAD
+usage: git diff [<options>] [<commit> [<commit>]] [--] [<path>...]
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git diff --stat --ignore-all-space cee6dbf..HEAD
+ Algorithms/git tutorial/command prompt.txt | 5369 ++++++++++++++++++++++++++++
+ Algorithms/git tutorial/file1.txt          |  342 ++
+ 2 files changed, 5711 insertions(+)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git push
+Everything up-to-date
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git branch
+* master
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git branch new_feature
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git branch
+* master
+  new_feature
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git push
+Everything up-to-date
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ ls -la .git/refs/heads
+total 2
+drwxr-xr-x 1 aksma 197610  0 Apr  2 00:42 .
+drwxr-xr-x 1 aksma 197610  0 Apr  1 18:09 ..
+-rw-r--r-- 1 aksma 197610 41 Apr  2 00:29 master
+-rw-r--r-- 1 aksma 197610 41 Apr  2 00:42 new_feature
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$
+
+
+
+b99df6e adding garbage to rollback
+95fbb16 adding all the commands used in the commit
+bdadebe git commit amed example
+f86107f how to undo the changes in staging area?
+a5318c6 added about how to undo changes in working directory
+da11818 file rename example
+7a7982a added git tutorial file
+b8924be Fibonacci series
+b2a3eb4 Initial Commit
+787bc81 Initial Commit
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git diff --stat -- summary cee6dbf..HEAD
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git diff --stat --summary cee6dbf..HEAD
+ Algorithms/git tutorial/command prompt.txt | 5369 ++++++++++++++++++++++++++++
+ Algorithms/git tutorial/file1.txt          |  342 ++
+ 2 files changed, 5711 insertions(+)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git diff --stat --ignore-all-spaces cee6dbf..HEAD
+usage: git diff [<options>] [<commit> [<commit>]] [--] [<path>...]
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git diff --stat --ignore-all-space cee6dbf..HEAD
+ Algorithms/git tutorial/command prompt.txt | 5369 ++++++++++++++++++++++++++++
+ Algorithms/git tutorial/file1.txt          |  342 ++
+ 2 files changed, 5711 insertions(+)
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git push
+Everything up-to-date
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git branch
+* master
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git branch new_feature
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git branch
+* master
+  new_feature
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git push
+Everything up-to-date
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ ls -la .git/refs/heads
+total 2
+drwxr-xr-x 1 aksma 197610  0 Apr  2 00:42 .
+drwxr-xr-x 1 aksma 197610  0 Apr  1 18:09 ..
+-rw-r--r-- 1 aksma 197610 41 Apr  2 00:29 master
+-rw-r--r-- 1 aksma 197610 41 Apr  2 00:42 new_feature
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ clear
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git branch
+* master
+  new_feature
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ cat .git/H
+HEAD   hooks/
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ cat .git/H
+HEAD   hooks/
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ cat .git/HEAD
+ref: refs/heads/master
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+$ git checkout new_feature
+M       Algorithms/git tutorial/command prompt.txt
+M       Algorithms/git tutorial/file1.txt
+Switched to branch 'new_feature'
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (new_feature)
+$ git branch
+  master
+* new_feature
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (new_feature)
+$ ls
+Algorithms
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (new_feature)
+$ cd Algorithms/
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (new_feature)
+$ ls
+'git tutorial'  src
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (new_feature)
+$ vi new_feature.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (new_feature)
+$ git add new_feature.txt
+warning: LF will be replaced by CRLF in Algorithms/new_feature.txt.
+The file will have its original line endings in your working directory.
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (new_feature)
+$ git commit -m "adding a file in branch"
+[new_feature cbfe9b3] adding a file in branch
+>>>>>>> create_branch_and_switch_same_time
  Committer: Akshay Palshikar <Akshay Palshikar>
 Your name and email address were configured automatically based
 on your username and hostname. Please check that they are accurate.
@@ -8392,6 +8819,7 @@ After doing this, you may fix the identity used for this commit with:
 
     git commit --amend --reset-author
 
+<<<<<<< HEAD
  2 files changed, 682 insertions(+)
 
 aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (create_branch_and_switch_same_time)
@@ -8399,6 +8827,40 @@ $ git log --oneline
 7ef6baa in create short branch
 4d03ac8 this is a commit in create_branch_and_switch_same_time
 cbfe9b3 adding a file in branch
+=======
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Algorithms/new_feature.txt
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (new_feature)
+$ git push
+fatal: The current branch new_feature has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin new_feature
+
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (new_feature)
+$ git push --set-upstream origin new_feature
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 395 bytes | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local objects.
+To https://github.com/akshaypalshikar/algorithms.git
+ * [new branch]      new_feature -> new_feature
+Branch new_feature set up to track remote branch new_feature from origin.
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (new_feature)
+$ git checkout master
+M       Algorithms/git tutorial/command prompt.txt
+M       Algorithms/git tutorial/file1.txt
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git log --oneline
+>>>>>>> create_branch_and_switch_same_time
 fa1ed01 git logs
 01ca377 ls-tree tree-ish traverse tree
 27c193d .gitkeep convention
@@ -8430,8 +8892,15 @@ b8924be Fibonacci series
 b2a3eb4 Initial Commit
 787bc81 Initial Commit
 
+<<<<<<< HEAD
 aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (create_branch_and_switch_same_time)
 $ git checkout new_feature
+=======
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (master)
+$ git checkout new_feature
+M       Algorithms/git tutorial/command prompt.txt
+M       Algorithms/git tutorial/file1.txt
+>>>>>>> create_branch_and_switch_same_time
 Switched to branch 'new_feature'
 Your branch is up-to-date with 'origin/new_feature'.
 
@@ -8470,6 +8939,7 @@ b2a3eb4 Initial Commit
 787bc81 Initial Commit
 
 aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (new_feature)
+<<<<<<< HEAD
 $ git checkout master
 Switched to branch 'master'
 Your branch is up-to-date with 'origin/master'.
@@ -11201,4 +11671,23 @@ $ export PS1='Akshay$ '
 Akshay$ export PS1='\[\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\007\]\n\[\033[32m\]\u@\h \[\033[35m\]$MSYSTEM \[\033[33m\]\w\[\033[36m\]`__git_ps1`\[\033[0m\]\n$ '
 
 aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms (master)
+=======
+$ git checkout
+HEAD                 master               origin/HEAD          origin/new_feature
+ORIG_HEAD            new_feature          origin/master
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (new_feature)
+$ git checkout
+HEAD                 master               origin/HEAD          origin/new_feature
+ORIG_HEAD            new_feature          origin/master
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (new_feature)
+$ git checkout new_feature
+M       Algorithms/git tutorial/command prompt.txt
+M       Algorithms/git tutorial/file1.txt
+Already on 'new_feature'
+Your branch is up-to-date with 'origin/new_feature'.
+
+aksma@DESKTOP-0FV5PJQ MINGW64 ~/git/algorithms/Algorithms (new_feature)
+>>>>>>> create_branch_and_switch_same_time
 $
