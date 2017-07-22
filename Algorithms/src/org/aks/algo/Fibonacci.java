@@ -5,7 +5,6 @@ package org.aks.algo;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 /**
  * @author akshay
@@ -24,13 +23,7 @@ public class Fibonacci {
 		System.out.println(fibonacci.fibonacci(limit));
 	}
 	
-	
-	public String readLine(Scanner scanner,String message){
-		String nextLine = null;
-		System.out.println(message);
-		nextLine = scanner.nextLine();
-		return nextLine;
-	}
+
 	
 	
 	public List<Integer> fibonacci(int limit){
