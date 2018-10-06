@@ -1,10 +1,8 @@
-/**
- * 
- */
 package org.aks.algo;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  * @author akshay
@@ -13,22 +11,28 @@ import java.util.List;
 public class Fibonacci {
 
 	/**
-	 * @param args
+	 * @param args command line arguments
 	 */
 	public static void main(String[] args) {
 		
 		Fibonacci fibonacci = new Fibonacci();
-		
-		int limit = 7;
+		Scanner scanner = new Scanner(System.in);
+		int limit = Integer.parseInt(fibonacci.readLine(scanner,"Enter limit for fibonacci : "));
 		System.out.println(fibonacci.fibonacci(limit));
 	}
 	
-
+	
+	private String readLine(Scanner scanner,String message){
+		String nextLine;
+		System.out.println(message);
+		nextLine = scanner.nextLine();
+		return nextLine;
+	}
 	
 	
 	public List<Integer> fibonacci(int limit){
 		List<Integer> fibonacci = new ArrayList<>();
-		int prev =0 ;
+		int prev;
 		int current=0;
 		int next=1;
 		
