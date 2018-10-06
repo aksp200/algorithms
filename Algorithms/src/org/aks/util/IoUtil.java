@@ -3,6 +3,8 @@
  */
 package org.aks.util;
 
+import org.aks.algo.BinaryTree;
+
 import java.util.Scanner;
 
 /**
@@ -26,5 +28,14 @@ public class IoUtil {
             }
         }
         System.out.println("]");
+    }
+
+    public static void print(BinaryTree node){
+        if(node==null){
+            return;
+        }
+        System.out.println(node.getValue());
+        print(node.getLeft());
+        print(node.getRight());
     }
 }
