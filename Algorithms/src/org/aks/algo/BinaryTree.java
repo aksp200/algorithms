@@ -1,7 +1,5 @@
 package org.aks.algo;
 
-import org.aks.util.IoUtil;
-
 import java.util.Objects;
 
 import static org.aks.util.IoUtil.print;
@@ -59,19 +57,25 @@ public class BinaryTree {
     }
 
     public static void main(String args[]) {
-        BinaryTree rootNode = new  BinaryTree();
+        BinaryTree rootNode = new BinaryTree();
         rootNode.setValue(0);
 
-        BinaryTree node1 = new  BinaryTree();
+        BinaryTree node1 = new BinaryTree();
         node1.setValue(1);
 
         rootNode.setLeft(node1);
 
-        BinaryTree node2 = new  BinaryTree();
+        BinaryTree node2 = new BinaryTree();
         node2.setValue(2);
 
-        rootNode.setLeft(node2);
+        rootNode.setRight(node2);
 
         print(rootNode);
+        System.out.println("sum : "+sum(rootNode));
+    }
+
+    public static int sum(BinaryTree node) {
+        if (node == null) return 0;
+        return node.getValue() + sum(node.getLeft()) + sum(node.getRight());
     }
 }
