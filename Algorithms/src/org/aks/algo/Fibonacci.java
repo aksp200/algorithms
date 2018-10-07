@@ -12,12 +12,25 @@ public class Fibonacci {
     /**
      * @param args command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         Fibonacci fibonacci = new Fibonacci();
         Scanner scanner = new Scanner(System.in);
         int limit = Integer.parseInt(fibonacci.readLine(scanner, "Enter limit for fibonacci : "));
         System.out.println(fibonacci.fibonacci(limit));
+
+
+        limit = Integer.parseInt(fibonacci.readLine(scanner, "Enter N for finding Nth fibonacci number : "));
+        System.gc();
+        System.out.println(System.currentTimeMillis());
+        System.out.println(fibonacci.fibonacciRecursive(limit));
+        System.out.println(System.currentTimeMillis());
+        System.gc();
+        limit = Integer.parseInt(fibonacci.readLine(scanner, "Enter N for finding Nth fibonacci number : "));
+        System.out.println(System.currentTimeMillis());
+        System.out.println(fibonacci.fibonacci(limit, new int[limit+1]));
+        System.out.println(System.currentTimeMillis());
+
     }
 
 
@@ -42,6 +55,27 @@ public class Fibonacci {
             next = prev + current;
         }
         return fibonacci;
+    }
+
+    public int fibonacciRecursive(int n) throws InterruptedException {
+        Thread.sleep(100);
+        if (n <= 0 || n == 1) {
+            return n;
+        }
+        return fibonacciRecursive(n - 1) + fibonacciRecursive(n - 2);
+    }
+
+    public int fibonacci(int n, int mem[]) throws InterruptedException {
+        Thread.sleep(100);
+        if (n <= 0) {
+            return 0;
+        } else if (n == 1) {
+            return 1;
+        } else if (mem[n] > 0) {
+            return mem[n];
+        }
+        mem[n] = fibonacci(n - 1, mem) + fibonacci(n - 2, mem);
+        return mem[n];
     }
 
 }
