@@ -18,19 +18,18 @@ public class Fibonacci {
         Scanner scanner = new Scanner(System.in);
         int limit = Integer.parseInt(fibonacci.readLine(scanner, "Enter limit for fibonacci : "));
         System.out.println(fibonacci.fibonacci(limit));
-
-
-        limit = Integer.parseInt(fibonacci.readLine(scanner, "Enter N for finding Nth fibonacci number : "));
         System.gc();
         System.out.println(System.currentTimeMillis());
         System.out.println(fibonacci.fibonacciRecursive(limit));
         System.out.println(System.currentTimeMillis());
         System.gc();
-        limit = Integer.parseInt(fibonacci.readLine(scanner, "Enter N for finding Nth fibonacci number : "));
         System.out.println(System.currentTimeMillis());
         System.out.println(fibonacci.fibonacci(limit, new int[limit+1]));
         System.out.println(System.currentTimeMillis());
-
+        System.gc();
+        System.out.println(System.currentTimeMillis());
+        System.out.println(fibonacci.fibonacciBottomUp(limit));
+        System.out.println(System.currentTimeMillis());
     }
 
 
@@ -76,6 +75,16 @@ public class Fibonacci {
         }
         mem[n] = fibonacci(n - 1, mem) + fibonacci(n - 2, mem);
         return mem[n];
+    }
+
+    public static int fibonacciBottomUp(int n) {
+        int bottomUp[] = new int[n + 1];
+        bottomUp[1] = 1;
+        bottomUp[2] = 1;
+        for (int i = 3; i < n + 1; i++) {
+            bottomUp[i] = bottomUp[i - 1] + bottomUp[i - 2];
+        }
+        return bottomUp[n];
     }
 
 }
