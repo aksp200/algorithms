@@ -11,7 +11,7 @@ public class AlgoUtils {
         }
     }
 
-    public static <T extends Comparable<? super T>> boolean isJSmaller(List<T> list, int i, int j) {
+    public static <T extends Comparable<? super T>> boolean isSecondSmaller(List<T> list, int i, int j) {
         T ith = list.get(i);
         T jth = list.get(j);
         if (jth.compareTo(ith) > 0) {
@@ -20,14 +20,19 @@ public class AlgoUtils {
         return true;
     }
 
-    public static <T extends Comparable<? super T>> void swap(List<T> list, int smallerIndex, int largerIndex) {
-        if(smallerIndex==largerIndex){
-            return;
+    public static <T extends Comparable<? super T>> boolean isSmaller(List<T> list, int i,T marker) {
+        T ith = list.get(i);
+        if (marker.compareTo(ith) > 0) {
+            return false;
         }
-        T ith = list.remove(smallerIndex);
-        T jth =list.remove(largerIndex-1);
-        list.add(smallerIndex, jth);
-        list.add(largerIndex, ith);
+        return true;
+    }
+
+    public static <T extends Comparable<? super T>> void swap(List<T> list, int smallerIndex, int largerIndex) {
+        T ith = list.get(smallerIndex);
+        T jth =list.get(largerIndex);
+        list.set(smallerIndex, jth);
+        list.set(largerIndex, ith);
     }
 
     public static <T extends Comparable<? super T>> void swapIfSmaller(List<T> list, T min,int minIndex, int j) {
