@@ -5,11 +5,12 @@ import org.aks.util.IoUtil;
 import java.util.List;
 import java.util.Scanner;
 
-import static org.aks.util.AlgoUtils.swapIfSmaller;
+import static org.aks.util.AlgoUtils.isJSmaller;
+import static org.aks.util.AlgoUtils.swap;
 import static org.aks.util.StringUtils.splitWithSeparator;
 import static org.aks.util.StringUtils.stringToInt;
 
-public class BubbleSort {
+public class SelectionSort {
     public static void main(String args[]) {
         Scanner scanner = new Scanner(System.in);
         int n;
@@ -18,16 +19,20 @@ public class BubbleSort {
         List<Integer> ints = stringToInt(intsStringList);
         System.out.printf("List before sort\n %s \n", ints);
         System.out.println(System.currentTimeMillis());
-        bubbleSort(ints);
+        selectionSort(ints);
         System.out.println(System.currentTimeMillis());
         System.out.printf("Sorted List\n %s \n", ints);
     }
 
-    public static <T extends Comparable> void bubbleSort(List<T> list) {
+    public static <T extends Comparable> void selectionSort(List<T> list) {
         for (int i = 0; i < list.size(); i++) {
+            int minIndex = i;
             for (int j = i+1; j < list.size(); j++) {
-                swapIfSmaller(list, i, j);
+                if (isJSmaller(list, minIndex, j)) {
+                    minIndex = j;
+                }
             }
+            swap(list, i, minIndex);
         }
     }
 }
