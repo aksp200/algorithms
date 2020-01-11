@@ -109,7 +109,6 @@ public class MyCircularQueue {
         }
         return current;
     }
-/*
     public static void main(String args[]) {
 
         // Your MyCircularQueue object will be instantiated and called as such:
@@ -121,12 +120,12 @@ public class MyCircularQueue {
 
         MyCircularQueue obj = new MyCircularQueue(5);
 
-        boolean param_1 = obj.enQueue(1);
+        boolean param_1 = obj.enQueue(10);
         int param_2 = obj.Rear();
         int param_3 = obj.Rear();
 
         boolean param_4 = obj.deQueue();
-        boolean param_5 = obj.enQueue(2);
+        boolean param_5 = obj.enQueue(20);
 
         int param_6 = obj.Rear();
         boolean param_7 = obj.deQueue();
@@ -143,7 +142,7 @@ public class MyCircularQueue {
         //["MyCircularQueue","enQueue","Rear","Rear","deQueue","enQueue","Rear","deQueue","Front","deQueue","deQueue","deQueue"]
 
 
-    }*/
+    }
 }
 
 /**
