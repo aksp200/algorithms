@@ -1,4 +1,5 @@
 package org.aks.algo;
+
 /**
  * Triplets
 
@@ -15,34 +16,58 @@ Return empty array if no such triplet exists.
  * 
  */
 
-import java.util.HashSet;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.ArrayList;
+import java.util.List;
 
 public class TripletSum {
     public static void main(String[] args) {
-        int arr[] = {1,2,3,4,5,6,7,8,9,15};
+        int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 15 };
         int s = 18;
+        print(triplets(arr, s));
     }
 
-    static  triplets(int arr[],int s){
-        Set<Set<Integer>> resultSetOfSets = new TreeSet<>();
-        Set<Integer> set = getSetFromArray(arr);
-        for(int i=0;i<arr.length-2;i++){
-            
+    static int[][] triplets(int arr[], int s) {
+        List<int[]> tList = new ArrayList<>();
+        for (int i = 0; i < arr.length - 2; i++) {
+            int j = i + 1;
+            int k = arr.length - 1;
+            while (j < k) {
+                int sum = arr[i] + arr[j] + arr[k];
+                if (sum == s) {
+                    int []triplet = new int[3];
+                    triplet[0]=arr[i];
+                    triplet[1]=arr[j];
+                    triplet[2]=arr[k];
+                    tList.add(triplet);
+                    j++;
+                    k--;
+                }
+                if (sum<s) {
+                    j++;
+                }
+                if(sum>s){
+                    k--;
+                }
+            }
+        }
+        return listToArr(tList);
+    }
+
+    static int[][] listToArr(List<int[]> list) {
+        int arr2d[][] = new int[list.size()][3];
+        for (int i = 0; i < list.size(); i++) {
+            arr2d[i] = list.get(i);
+        }
+        return arr2d;
+    }
+
+    static void print(int [][] a){
+        for(int ar[]:a){
+            System.out.print("[");
+            for(int i:ar){
+                System.out.print(" "+i);
+            }
+            System.out.print("]\n");
         }
     }
-
-    static boolean isPairPresent(int m, int n, Set<Integer> set){
-        return set.contains(m) && set.contains(n);
-    }
-
-    static Set<Integer> getSetFromArray(int arr[]){
-        Set<Integer> set = new HashSet<>();
-        for(int i:arr){
-            set.add(i);
-        }
-        return set;
-    }
-
 }
