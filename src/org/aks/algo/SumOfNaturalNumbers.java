@@ -5,10 +5,6 @@ public class SumOfNaturalNumbers {
         System.out.println(sumWithLoop(10));
     }
 
-    private static int sum(int n){
-        return n*(n+1)/2;
-    }
-
     private static int sumWithLoop(int n){
         int sum = 0;
         for(int i=1;i<=n;i++){

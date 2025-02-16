@@ -5,7 +5,6 @@ import static org.aks.util.IoUtil.print;
 public class ReverseArray {
     public static void main(String args[]) {
         int arr[] = {1, 2, 3, 4, 5};
-        ReverseArray reverseArray = new ReverseArray();
         reverse(arr);
         print(arr);
     }
