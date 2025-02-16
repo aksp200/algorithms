@@ -40,7 +40,7 @@ public class Bitwise {
         n =6;
         System.out.printf("\n\nfinding %dth bit\n",n);
         int mask = 1;
-        for(int i=0;i<n-1;i++) mask = mask<<1;
+        mask=mask<<n-1;
         System.out.println(Integer.toBinaryString(mask ));
         System.out.println(mask & n1);
         if((mask & n1) == 0) System.out.printf("%dth bit is zero\n",n);
@@ -49,7 +49,7 @@ public class Bitwise {
         n=2;
         System.out.printf("\n\nfinding %dth bit\n",n);
         mask = 1;
-        for(int i=0;i<n-1;i++) mask = mask<<1;
+        mask=mask<<n-1;
         System.out.println(Integer.toBinaryString(mask ));
         System.out.println(mask & n1);
         if((mask & n1) == 0) System.out.printf("%dth bit is zero\n",n);
@@ -62,7 +62,8 @@ public class Bitwise {
         System.out.println("number before setting the bit "+Integer.toBinaryString(n1));
         System.out.printf("set %dth bit\n",n);
         mask = 1;
-        for(int i=0;i<n-1;i++) mask = mask<<1;
+        System.out.println("test: "+Integer.toBinaryString(mask<<n));
+        mask=mask<<n-1;
         System.out.println(Integer.toBinaryString(mask));
         n1=n1|mask;
         System.out.println("number after setting the bit "+Integer.toBinaryString(n1));
@@ -72,9 +73,9 @@ public class Bitwise {
         n1 = 1000;
         n=4;
         System.out.println("number before clearing the bit "+Integer.toBinaryString(n1));
-        System.out.printf("set %dth bit\n",n);
+        System.out.printf("clear %dth bit\n",n);
         mask = 1;
-        for(int i=0;i<n-1;i++) mask = mask<<1;
+        mask=mask<<n-1;
         mask=~mask;
         System.out.println(Integer.toBinaryString(mask));
         n1=n1&mask;
