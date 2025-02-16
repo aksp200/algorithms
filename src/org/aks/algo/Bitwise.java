@@ -81,5 +81,14 @@ public class Bitwise {
         n1=n1&mask;
         System.out.println("number after clearing the bit "+Integer.toBinaryString(n1));
 
+        //how many set bits in the number
+        n1 = 3;
+        System.out.println("how many set bits in the number: "+n1+"\t binary :"+Integer.toBinaryString(n1));
+        int count = 0;
+        while(n1>0){
+            n1=n1&(n1-1);
+            count++;
+        }
+        System.out.println("number of set bits: "+count);
     } 
 }
