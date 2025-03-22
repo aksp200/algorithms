@@ -1,0 +1,7 @@
+private void print(int a[]){
+  System.out.println("[");
+  for(int n:a){
+    System.out.println(n+",");   
+  }
+  System.out.println("]");
+}
